@@ -5,14 +5,14 @@ http_interactions:
     method: post
     uri: https://admin:admin@localhost/pulp/api/v2/events/
     body: 
-      string: "{\"event_types\":[\"repo.publish.finish\"],\"notifier_type_id\":\"rest-api\",\"notifier_config\":{\"url\":\"http://foo.com/foo/\"}}"
+      string: "{\"notifier_type_id\":\"rest-api\",\"event_types\":[\"repo.publish.finish\"],\"notifier_config\":{\"url\":\"http://foo.com/foo/\"}}"
     headers: 
+      Accept: 
+      - application/json
       Content-Type: 
       - application/json
       Content-Length: 
       - "117"
-      Accept: 
-      - application/json
       Accept-Encoding: 
       - gzip, deflate
   response: 
@@ -20,29 +20,29 @@ http_interactions:
       code: 201
       message: Created
     headers: 
-      Content-Type: 
-      - application/json
+      Date: 
+      - Wed, 28 Nov 2012 19:11:02 GMT
       Location: 
-      - /pulp/api/v2/events/50a586ec9c60ed43350006cc/
-      Content-Length: 
-      - "286"
+      - /pulp/api/v2/events/50b661c69c60ed40db0016f7/
       Server: 
       - Apache/2.2.22 (Fedora)
-      Date: 
-      - Fri, 16 Nov 2012 00:21:00 GMT
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "286"
     body: 
-      string: "{\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"50a586ec9c60ed43350006cc\"}, \"id\": \"50a586ec9c60ed43350006cc\", \"notifier_type_id\": \"rest-api\", \"_href\": \"/pulp/api/v2/events/50a586ec9c60ed43350006cc/\"}"
+      string: "{\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"50b661c69c60ed40db0016f7\"}, \"id\": \"50b661c69c60ed40db0016f7\", \"notifier_type_id\": \"rest-api\", \"_href\": \"/pulp/api/v2/events/50b661c69c60ed40db0016f7/\"}"
     http_version: 
-  recorded_at: Fri, 16 Nov 2012 00:21:00 GMT
+  recorded_at: Wed, 28 Nov 2012 19:11:02 GMT
 - request: 
     method: delete
-    uri: https://admin:admin@localhost/pulp/api/v2/events/50a586ec9c60ed43350006cc/
+    uri: https://admin:admin@localhost/pulp/api/v2/events/50b661c69c60ed40db0016f7/
     body: 
       string: ""
     headers: 
-      Content-Type: 
-      - application/json
       Accept: 
+      - application/json
+      Content-Type: 
       - application/json
       Accept-Encoding: 
       - gzip, deflate
@@ -51,15 +51,15 @@ http_interactions:
       code: 200
       message: OK
     headers: 
+      Date: 
+      - Wed, 28 Nov 2012 19:11:02 GMT
+      Server: 
+      - Apache/2.2.22 (Fedora)
       Content-Type: 
       - application/json
       Content-Length: 
       - "4"
-      Server: 
-      - Apache/2.2.22 (Fedora)
-      Date: 
-      - Fri, 16 Nov 2012 00:21:00 GMT
     body: 
       string: "null"
     http_version: 
-  recorded_at: Fri, 16 Nov 2012 00:21:00 GMT
+  recorded_at: Wed, 28 Nov 2012 19:11:02 GMT
