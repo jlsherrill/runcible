@@ -7,30 +7,30 @@ http_interactions:
     body: 
       string: "{}"
     headers: 
-      Accept: 
-      - application/json
-      Content-Type: 
-      - application/json
       Content-Length: 
       - "2"
       Accept-Encoding: 
       - gzip, deflate
+      Content-Type: 
+      - application/json
+      Accept: 
+      - application/json
   response: 
     status: 
       code: 202
       message: Accepted
     headers: 
-      Date: 
-      - Wed, 28 Nov 2012 19:14:52 GMT
-      Content-Encoding: 
-      - utf-8
+      Content-Length: 
+      - "706"
       Server: 
       - Apache/2.2.22 (Fedora)
       Content-Type: 
       - application/json
-      Content-Length: 
-      - "706"
+      Date: 
+      - Wed, 28 Nov 2012 19:32:16 GMT
+      Content-Encoding: 
+      - utf-8
     body: 
-      string: "[{\"task_group_id\": \"cb242e47-c1f5-406a-a984-78cb68577075\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/cb242e47-c1f5-406a-a984-78cb68577075/\", \"task_id\": \"581fd07c-be13-4410-a54a-f993a70b64b3\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"cb242e47-c1f5-406a-a984-78cb68577075\", \"call_request_id\": \"581fd07c-be13-4410-a54a-f993a70b64b3\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"59c61b32-6e56-4d61-ac17-2b4c5037f979\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/59c61b32-6e56-4d61-ac17-2b4c5037f979/\", \"task_id\": \"a9188f66-d547-4389-a94c-dbea179f4180\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"59c61b32-6e56-4d61-ac17-2b4c5037f979\", \"call_request_id\": \"a9188f66-d547-4389-a94c-dbea179f4180\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 19:14:52 GMT
+  recorded_at: Wed, 28 Nov 2012 19:32:16 GMT
