@@ -21,18 +21,18 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:34:34 GMT
+      - Tue, 09 Jul 2013 01:03:37 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
-      - "674"
+      - "427"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"_id\": {\"$oid\": \"51db0b5bd60ea33db7f8eb00\"}, \"name\": \"admin\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"admin\", \"id\": \"51db0b5bd60ea33db7f8eb00\", \"_href\": \"/pulp/api/v2/users/admin/\"}, {\"_id\": {\"$oid\": \"51db0bc8d60ea33db7f8eb1b\"}, \"name\": \"hidden-3OK5WS-9adb7bbd\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"hidden-3OK5WS-9adb7bbd\", \"id\": \"51db0bc8d60ea33db7f8eb1b\", \"_href\": \"/pulp/api/v2/users/hidden-3OK5WS-9adb7bbd/\"}, {\"_id\": {\"$oid\": \"51db144ad60ea33db7f8f632\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"51db144ad60ea33db7f8f632\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}]"
+      string: "[{\"_id\": {\"$oid\": \"51db575bd60ea36250a03afd\"}, \"name\": \"admin\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"admin\", \"id\": \"51db575bd60ea36250a03afd\", \"_href\": \"/pulp/api/v2/users/admin/\"}, {\"_id\": {\"$oid\": \"51db6168d60ea369f583b7d8\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"51db6168d60ea369f583b7d8\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}]"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:34:35 GMT
+  recorded_at: Tue, 09 Jul 2013 01:03:37 GMT
 - request: 
     method: get
     uri: https://admin:admin@f18/pulp/api/v2/users/integration_test_user/
@@ -54,7 +54,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:34:35 GMT
+      - Tue, 09 Jul 2013 01:03:38 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
@@ -63,9 +63,9 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"_id\": {\"$oid\": \"51db144bd60ea33db7f8f64a\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"password\": null, \"id\": \"51db144bd60ea33db7f8f64a\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
+      string: "{\"_id\": {\"$oid\": \"51db616ad60ea369f583b807\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"password\": null, \"id\": \"51db616ad60ea369f583b807\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:34:36 GMT
+  recorded_at: Tue, 09 Jul 2013 01:03:38 GMT
 - request: 
     method: post
     uri: https://admin:admin@f18/pulp/api/v2/users/
@@ -89,7 +89,7 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:38:56 GMT
+      - Tue, 09 Jul 2013 01:06:48 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Location: 
@@ -100,9 +100,9 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"_id\": {\"$oid\": \"51db1551d60ea33db7f8f848\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"51db1551d60ea33db7f8f848\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
+      string: "{\"_id\": {\"$oid\": \"51db6229d60ea369f583ba2f\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"51db6229d60ea369f583ba2f\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:38:57 GMT
+  recorded_at: Tue, 09 Jul 2013 01:06:49 GMT
 - request: 
     method: delete
     uri: https://admin:admin@f18/pulp/api/v2/users/integration_test_user/
@@ -124,7 +124,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:38:57 GMT
+      - Tue, 09 Jul 2013 01:06:49 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
@@ -135,5 +135,5 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:38:57 GMT
+  recorded_at: Tue, 09 Jul 2013 01:06:49 GMT
 recorded_with: VCR 2.5.0

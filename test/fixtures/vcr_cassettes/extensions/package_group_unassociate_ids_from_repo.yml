@@ -23,7 +23,7 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:30:03 GMT
+      - Tue, 09 Jul 2013 01:02:44 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -34,9 +34,9 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/c207d4f4-65bf-4518-a0ab-b143814fe189/\", \"task_id\": \"c207d4f4-65bf-4518-a0ab-b143814fe189\", \"call_request_tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:unassociate\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:unassociate\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"c207d4f4-65bf-4518-a0ab-b143814fe189\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
+      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/e8b45410-7694-4bc5-98df-f4c4981fd531/\", \"task_id\": \"e8b45410-7694-4bc5-98df-f4c4981fd531\", \"call_request_tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:unassociate\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:unassociate\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"e8b45410-7694-4bc5-98df-f4c4981fd531\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:30:03 GMT
+  recorded_at: Tue, 09 Jul 2013 01:02:44 GMT
 - request: 
     method: post
     uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id_clone/search/units/
@@ -60,7 +60,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:30:10 GMT
+      - Tue, 09 Jul 2013 01:02:53 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
@@ -69,7 +69,7 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"updated\": \"2013-07-08T23:29:36Z\", \"repo_id\": \"integration_test_id_clone\", \"created\": \"2013-07-08T23:29:36Z\", \"_ns\": \"repo_content_units\", \"unit_id\": \"eb43b4d5-49cf-45fb-802f-ebe2842f8752\", \"unit_type_id\": \"package_group\", \"owner_type\": \"user\", \"_id\": {\"$oid\": \"51db1320d60ea33db7f8f57e\"}, \"id\": \"51db1320d60ea33db7f8f57e\", \"owner_id\": \"admin\", \"metadata\": {\"_storage_path\": null, \"mandatory_package_names\": [\"elephant,giraffe,cheetah,lion,monkey,penguin,squirrel,walrus\", \"penguin\"], \"repo_id\": \"integration_test_id_clone\", \"description\": null, \"user_visible\": true, \"default\": true, \"_ns\": \"units_package_group\", \"display_order\": 1024, \"optional_package_names\": [], \"translated_name\": {}, \"translated_description\": {}, \"conditional_package_names\": [], \"default_package_names\": [], \"_content_type_id\": \"package_group\", \"langonly\": null, \"_id\": \"eb43b4d5-49cf-45fb-802f-ebe2842f8752\", \"id\": \"mammal\", \"name\": \"mammal\"}}]"
+      string: "[{\"updated\": \"2013-07-09T05:01:48Z\", \"repo_id\": \"integration_test_id_clone\", \"created\": \"2013-07-09T05:01:48Z\", \"_ns\": \"repo_content_units\", \"unit_id\": \"974e9cea-00bc-4ec0-9a54-cf1dd560b838\", \"unit_type_id\": \"package_group\", \"owner_type\": \"user\", \"_id\": {\"$oid\": \"51db60fcd60ea369f583b74e\"}, \"id\": \"51db60fcd60ea369f583b74e\", \"owner_id\": \"admin\", \"metadata\": {\"_storage_path\": null, \"mandatory_package_names\": [\"elephant,giraffe,cheetah,lion,monkey,penguin,squirrel,walrus\", \"penguin\"], \"repo_id\": \"integration_test_id_clone\", \"description\": null, \"user_visible\": true, \"default\": true, \"_ns\": \"units_package_group\", \"display_order\": 1024, \"optional_package_names\": [], \"translated_name\": {}, \"translated_description\": {}, \"conditional_package_names\": [], \"default_package_names\": [], \"_content_type_id\": \"package_group\", \"langonly\": null, \"_id\": \"974e9cea-00bc-4ec0-9a54-cf1dd560b838\", \"id\": \"mammal\", \"name\": \"mammal\"}}]"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:30:10 GMT
+  recorded_at: Tue, 09 Jul 2013 01:02:53 GMT
 recorded_with: VCR 2.5.0

@@ -172,144 +172,6 @@ http_interactions:
     http_version: 
   recorded_at: Mon, 08 Jul 2013 17:26:23 GMT
 - request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 17:26:34 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "1226"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"display_name\": \"integration_test_consumer\", \"description\": null, \"certificate\": \"-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgCAMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDgxNzI2MzRaFw0yMzA3MDYxNzI2MzRaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMnn\\nnJ/dAjnnoOzIU/T49V6MxK3yGkqYwe94q6+4bt5lkHaBrbxOTyitJpSZGBUWtuUY\\n1Odj4r8uk7r1WGiNAHyiAnG6x12ED/pmNxyxJbOj6XXhd7ZGA3L2gOB7C9jNC5s/\\nuqsr1m5gl6/L1n5ryxffGW0eRHnkgQaIi3P9nerlAgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBAA/CO9eU10VvbGj4QX0twx0yQansMbdOMRhTjUyWxuRIrW+1jz0Efpvl\\nBhx/SMaHk36/YshBuOMPBAdGwbNUvsk0KRajaWTNn0QkhKnDU7Owt8aRSQ4syh7i\\nWI5sGrmYnjablj5j8e0HDLIAKuuwtvJG5YeM/NCGwlQG8Db06NQjJVhmEK2n9Lmb\\nWCYLodYh+zKNJ/EzZmwpOAqu0IgeNJIQrWJmMN+zvjytY6oxDDpjXsU6wnkjaqgM\\nQjcrwJjT+tdjHt5XyhW9eiHdCEzXAEincsqDO4Lhrf2aWQlgKet1wJQzBQNIHt1Q\\nL++kyPkHDchF2M6h/Ie9VncfhWE3SlQ=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51daf64ad60ea303d721f262\"}, \"id\": \"integration_test_consumer\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 17:26:34 GMT
-- request: 
-    method: put
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/
-    body: 
-      encoding: US-ASCII
-      string: "{\"delta\":{\"description\":\"Test description\"}}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "44"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 17:26:34 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "1240"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"display_name\": \"integration_test_consumer\", \"description\": \"Test description\", \"certificate\": \"-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgCBMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDgxNzI2MzRaFw0yMzA3MDYxNzI2MzRaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOiV\\nEk51wdVsebever5rFf7Ao8hgxg+y7t2Rby9BvrTVdJGj+5DmqjvnVogwsl7ZJbZp\\nMRyIZr/CbUVv99dr4wSkC7vv/GR1ZR6xn/AR3Zmo/K/PVy8e4TINpE7W7ClRmghb\\nnbNW6BBrymd89uA6WW1SCLTDBBbpiiK+o1rz3Q37AgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBAI1TQ3KAnwkmKlsWtMGB41PC6t1jL4ndXrlGKjB7D89Nd1RAqaDZIYUM\\nA5DWGWsxMMXgBq5+/6kZ7JZOZ3q/SFqUru4aRJbF3cBj/kQzcjWddbfVTbsb41zk\\nK2r+5Kd619OPCdOWe0U/FLXUAvhluxlVJ0n6vXG8CPeiZ46anebm1pq9AxO587Aa\\nQ5woLZBadxkMm7gjtpzT7JBfONa8mC/WLCbrXiOsD23IEdEIq4dck8lKWbnI/JO9\\n9KJOUJ9g2nLjYfzI1oVep7IDhJHk7bdG/2z/hF1Pgzro1hAz0MI1idiU2h3ehigk\\niurOMmTI/pnXvpdgEIbmETu9vj7yduc=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51daf64ad60ea303d721f278\"}, \"id\": \"integration_test_consumer\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 17:26:35 GMT
-- request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/profiles/rpm//
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 17:26:37 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "399"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"profile\": [{\"release\": \"0.8\", \"arch\": \"noarch\", \"version\": \"0.3\", \"vendor\": \"FedoraHosted\", \"name\": \"elephant\"}], \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/profiles/rpm/integration_test_consumer/rpm/\", \"content_type\": \"rpm\", \"_ns\": \"consumer_unit_profiles\", \"_id\": {\"$oid\": \"51daf64dd60ea303d721f2b5\"}, \"id\": \"51daf64dd60ea303d721f2b5\", \"consumer_id\": \"integration_test_consumer\"}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 17:26:37 GMT
-- request: 
-    method: post
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/profiles//
-    body: 
-      encoding: US-ASCII
-      string: "{\"content_type\":\"rpm\",\"profile\":[{\"vendor\":\"FedoraHosted\",\"name\":\"elephant\",\"version\":\"0.3\",\"release\":\"0.8\",\"arch\":\"noarch\"}]}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "126"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 201
-      message: Created
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 17:26:37 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Location: 
-      - /pulp/api/v2/consumers/integration_test_consumer/profiles/integration_test_consumer/rpm/
-      Content-Length: 
-      - "395"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"profile\": [{\"release\": \"0.8\", \"vendor\": \"FedoraHosted\", \"version\": \"0.3\", \"arch\": \"noarch\", \"name\": \"elephant\"}], \"_ns\": \"consumer_unit_profiles\", \"consumer_id\": \"integration_test_consumer\", \"content_type\": \"rpm\", \"_id\": {\"$oid\": \"51daf64dd60ea303d721f2b5\"}, \"id\": \"51daf64dd60ea303d721f2b5\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/profiles/integration_test_consumer/rpm/\"}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 17:26:38 GMT
-- request: 
     method: delete
     uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/fdde17f367dc5a7925b0/
     body: 
@@ -345,152 +207,6 @@ http_interactions:
     http_version: 
   recorded_at: Mon, 08 Jul 2013 18:03:42 GMT
 - request: 
-    method: post
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/uninstall//
-    body: 
-      encoding: US-ASCII
-      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "62"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 202
-      message: Accepted
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 18:12:14 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Encoding: 
-      - utf-8
-      Content-Length: 
-      - "658"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/27824f71-91f4-44f2-8acf-ca958f801543/\", \"task_id\": \"27824f71-91f4-44f2-8acf-ca958f801543\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_uninstall\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_uninstall\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"27824f71-91f4-44f2-8acf-ca958f801543\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 18:12:14 GMT
-- request: 
-    method: post
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/update//
-    body: 
-      encoding: US-ASCII
-      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "62"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 202
-      message: Accepted
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 18:12:20 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Encoding: 
-      - utf-8
-      Content-Length: 
-      - "652"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/d452a4f9-7cc1-4fb2-808d-2da3c3fba022/\", \"task_id\": \"d452a4f9-7cc1-4fb2-808d-2da3c3fba022\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_update\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_update\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"d452a4f9-7cc1-4fb2-808d-2da3c3fba022\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 18:12:20 GMT
-- request: 
-    method: post
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/actions/content/applicability//
-    body: 
-      encoding: US-ASCII
-      string: "{\"consumer_criteria\":{\"filters\":{\"id\":{\"$in\":[\"integration_test_consumer_support\"]}}},\"repo_criteria\":{\"filters\":{\"id\":{\"$in\":[\"integration_test_id\"]}}},\"units\":{\"erratum\":[]}}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "176"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 18:12:26 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "969"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"rpm\": {\"integration_test_consumer_support\": [{\"details\": {}, \"summary\": {\"unit_key\": {\"name\": \"elephant\", \"checksum\": \"3e1c70cd1b421328acaf6397cb3d16145306bb95f65d1b095fc31372a0a701f3\", \"epoch\": \"0\", \"version\": \"0.3\", \"release\": \"0.8\", \"arch\": \"noarch\", \"checksumtype\": \"sha256\"}}}]}, \"erratum\": {\"integration_test_consumer_support\": [{\"details\": {\"status\": \"stable\", \"issued\": \"2010-01-01 01:01:01\", \"from\": \"lzap+pub@redhat.com\", \"description\": \"One package errata\", \"title\": \"One package errata\", \"_ns\": \"units_erratum\", \"pkglist\": [{\"packages\": [{\"src\": \"http://www.fedoraproject.org\", \"name\": \"elephant\", \"sum\": null, \"filename\": \"elephant-0.3-0.8.noarch.rpm\", \"epoch\": null, \"version\": \"0.3\", \"release\": \"0.8\", \"arch\": \"noarch\"}], \"name\": \"1\", \"short\": \"\"}], \"version\": \"1\", \"references\": [], \"_content_type_id\": \"erratum\", \"_id\": \"84914dac-a890-4a1d-9305-663bba0322e6\", \"type\": \"security\", \"id\": \"RHEA-2010:0002\"}, \"summary\": {\"unit_key\": \"RHEA-2010:0002\"}}]}}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 18:12:26 GMT
-- request: 
-    method: post
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/install//
-    body: 
-      encoding: US-ASCII
-      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      Content-Length: 
-      - "62"
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 202
-      message: Accepted
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 18:12:26 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Encoding: 
-      - utf-8
-      Content-Length: 
-      - "654"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/cedcf30f-2929-44e3-85ef-7d69d92e4f11/\", \"task_id\": \"cedcf30f-2929-44e3-85ef-7d69d92e4f11\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_install\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_install\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"cedcf30f-2929-44e3-85ef-7d69d92e4f11\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 18:12:26 GMT
-- request: 
     method: get
     uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/fdde17f367dc5a7925b0/
     body: 
@@ -523,72 +239,6 @@ http_interactions:
       string: "{\"notify_agent\": true, \"repo_id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/fdde17f367dc5a7925b0/integration_test_consumer_support/integration_test_id/fdde17f367dc5a7925b0/\", \"type_id\": \"yum_distributor\", \"consumer_actions\": [{\"action\": \"bind\", \"status\": \"failed\", \"id\": \"595669b7-3a64-4646-836c-d7a40f67486d\", \"timestamp\": 1373307123.262834}], \"_ns\": \"consumer_bindings\", \"distributor_id\": \"fdde17f367dc5a7925b0\", \"consumer_id\": \"integration_test_consumer_support\", \"deleted\": false, \"binding_config\": null, \"details\": {\"server_name\": \"f18\", \"ca_cert\": \"-----BEGIN CERTIFICATE-----\\nMIIEqzCCA5OgAwIBAgIJAL95asXGxnjnMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODAeFw0xMzA3MDMxMjU5NDFaFw0zODAxMTgxMjU5NDFaMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALupWyWE7L6R\\nFp2ol6vRRBHUl7XQQtjFJ3MAcBs3RaFyB9c6fg0DhAy0kAo9gO05u9dvSAtJUOJL\\nlL7Csd3jvGGnopUWZX0ZpqJap6AER7nbY7qBVs2MUPuriq4OkMZohazz0+E4PeHQ\\nn61fpajm4L+HMIrGsBf0krckT5G9TQf2lCZP3uyqyIYX0qy6r7ZCc51Za5RA59eU\\nMLpUloZEzTzJPdTeTtPDRyJvEIuLzB/SGowaxlS6caql96k83ksMbLRSvfp2LAER\\nlkpWBQQErWoR9Y8pBaeYt8FqF7jW4tjxQ5YGlhQtF1OKslbVr6ekhZX50V5LTVZr\\nz11I7bKuLG8CAwEAAaOCAUowggFGMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgGm\\nMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjARBglghkgBhvhCAQEEBAMC\\nAkQwNQYJYIZIAYb4QgENBCgWJkthdGVsbG8gU1NMIFRvb2wgR2VuZXJhdGVkIENl\\ncnRpZmljYXRlMB0GA1UdDgQWBBTskg6r8jbjIOJ2W2zRdrboL4r68jCBoAYDVR0j\\nBIGYMIGVgBTskg6r8jbjIOJ2W2zRdrboL4r68qFypHAwbjELMAkGA1UEBhMCVVMx\\nFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYDVQQHEwdSYWxlaWdoMRAwDgYD\\nVQQKEwdTb21lT3JnMRQwEgYDVQQLEwtTb21lT3JnVW5pdDEMMAoGA1UEAxMDZjE4\\nggkAv3lqxcbGeOcwDQYJKoZIhvcNAQEFBQADggEBAJ7Hj4GxBFGDjbY5OaGW3ixJ\\nyEw/WQrDkORp2rkWmHafjTF/K5BHbDfFkWEcBHGxqdKaGjwfrf8qXAmpnrDAhmDb\\nrjM/0Ig/mAcq8H5uKOjOQIUoDeDKzgf2IkOExKEC/GofLVUD+Bt6SFW7MSsukSve\\nkGd+IcehAPu3IKDt5z5BhnpzMwc4mivOtkkcxofd23EqpbDjBPGq3MGtB6gR40vM\\neF6yN7wzA4xSJqSkE5h5ox5AqAKemnaB7J6EPzLXASW99rmZJjCV5YrQ3nw5mhCa\\naOfS8fLidf931l5eE34KNoVyJ/pdBaOl09a9gVYMzxdN/OIfj1x7uVELRPUq0ZQ=\\n-----END CERTIFICATE-----\\n\", \"relative_path\": \"/pulp/repos//path\", \"gpg_keys\": [], \"client_cert\": null, \"protocols\": [\"http\", \"https\"], \"repo_name\": \"integration_test_id\"}, \"_id\": {\"$oid\": \"51db00f2d60ea32d76984230\"}, \"id\": \"51db00f2d60ea32d76984230\"}"
     http_version: 
   recorded_at: Mon, 08 Jul 2013 18:12:32 GMT
-- request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/?details=true
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 19:40:04 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "1026"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {\"package_group\": 2, \"distribution\": 1, \"package_category\": 1, \"rpm\": 8, \"erratum\": 2}, \"_id\": {\"$oid\": \"51db157bd60ea33db7f8f8e2\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\", \"importers\": [{\"repo_id\": \"integration_test_id\", \"_ns\": \"repo_importers\", \"importer_type_id\": \"yum_importer\", \"last_sync\": \"2013-07-08T15:39:40-04:00\", \"scheduled_syncs\": [], \"_id\": {\"$oid\": \"51db157bd60ea33db7f8f8e3\"}, \"config\": {\"feed\": \"file:///home/dadavis/Projects/runcible/test/fixtures/repositories/zoo5\"}, \"id\": \"yum_importer\"}], \"distributors\": [{\"repo_id\": \"integration_test_id\", \"_ns\": \"repo_distributors\", \"last_publish\": null, \"auto_publish\": false, \"scheduled_publishes\": [], \"distributor_type_id\": \"yum_distributor\", \"_id\": {\"$oid\": \"51db157bd60ea33db7f8f8e4\"}, \"config\": {\"http\": true, \"relative_url\": \"/path\", \"https\": true}, \"id\": \"5341ba5ef33ebc00a7ef\"}]}"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:40:04 GMT
-- request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings//
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Mon, 08 Jul 2013 19:40:04 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "2524"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "[{\"notify_agent\": true, \"repo_id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_consumer_support/integration_test_id/5341ba5ef33ebc00a7ef/\", \"type_id\": \"yum_distributor\", \"consumer_actions\": [{\"action\": \"bind\", \"status\": \"failed\", \"id\": \"f76de7eb-ea14-49e2-bf65-cac62f6ef4ef\", \"timestamp\": 1373312390.475662}], \"_ns\": \"consumer_bindings\", \"distributor_id\": \"5341ba5ef33ebc00a7ef\", \"consumer_id\": \"integration_test_consumer_support\", \"deleted\": false, \"binding_config\": null, \"details\": {\"server_name\": \"f18\", \"ca_cert\": \"-----BEGIN CERTIFICATE-----\\nMIIEqzCCA5OgAwIBAgIJAL95asXGxnjnMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODAeFw0xMzA3MDMxMjU5NDFaFw0zODAxMTgxMjU5NDFaMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALupWyWE7L6R\\nFp2ol6vRRBHUl7XQQtjFJ3MAcBs3RaFyB9c6fg0DhAy0kAo9gO05u9dvSAtJUOJL\\nlL7Csd3jvGGnopUWZX0ZpqJap6AER7nbY7qBVs2MUPuriq4OkMZohazz0+E4PeHQ\\nn61fpajm4L+HMIrGsBf0krckT5G9TQf2lCZP3uyqyIYX0qy6r7ZCc51Za5RA59eU\\nMLpUloZEzTzJPdTeTtPDRyJvEIuLzB/SGowaxlS6caql96k83ksMbLRSvfp2LAER\\nlkpWBQQErWoR9Y8pBaeYt8FqF7jW4tjxQ5YGlhQtF1OKslbVr6ekhZX50V5LTVZr\\nz11I7bKuLG8CAwEAAaOCAUowggFGMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgGm\\nMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjARBglghkgBhvhCAQEEBAMC\\nAkQwNQYJYIZIAYb4QgENBCgWJkthdGVsbG8gU1NMIFRvb2wgR2VuZXJhdGVkIENl\\ncnRpZmljYXRlMB0GA1UdDgQWBBTskg6r8jbjIOJ2W2zRdrboL4r68jCBoAYDVR0j\\nBIGYMIGVgBTskg6r8jbjIOJ2W2zRdrboL4r68qFypHAwbjELMAkGA1UEBhMCVVMx\\nFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYDVQQHEwdSYWxlaWdoMRAwDgYD\\nVQQKEwdTb21lT3JnMRQwEgYDVQQLEwtTb21lT3JnVW5pdDEMMAoGA1UEAxMDZjE4\\nggkAv3lqxcbGeOcwDQYJKoZIhvcNAQEFBQADggEBAJ7Hj4GxBFGDjbY5OaGW3ixJ\\nyEw/WQrDkORp2rkWmHafjTF/K5BHbDfFkWEcBHGxqdKaGjwfrf8qXAmpnrDAhmDb\\nrjM/0Ig/mAcq8H5uKOjOQIUoDeDKzgf2IkOExKEC/GofLVUD+Bt6SFW7MSsukSve\\nkGd+IcehAPu3IKDt5z5BhnpzMwc4mivOtkkcxofd23EqpbDjBPGq3MGtB6gR40vM\\neF6yN7wzA4xSJqSkE5h5ox5AqAKemnaB7J6EPzLXASW99rmZJjCV5YrQ3nw5mhCa\\naOfS8fLidf931l5eE34KNoVyJ/pdBaOl09a9gVYMzxdN/OIfj1x7uVELRPUq0ZQ=\\n-----END CERTIFICATE-----\\n\", \"relative_path\": \"/pulp/repos//path\", \"gpg_keys\": [], \"client_cert\": null, \"protocols\": [\"http\", \"https\"], \"repo_name\": \"integration_test_id\"}, \"_id\": {\"$oid\": \"51db1585d60ea33db7f8f912\"}, \"id\": \"51db1585d60ea33db7f8f912\"}]"
-    http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:40:05 GMT
 - request: 
     method: delete
     uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/5341ba5ef33ebc00a7ef/
@@ -625,6 +275,354 @@ http_interactions:
     http_version: 
   recorded_at: Mon, 08 Jul 2013 19:40:05 GMT
 - request: 
+    method: delete
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/a5b42fa21cad8b811d92/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 202
+      message: Accepted
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:33:39 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Encoding: 
+      - utf-8
+      Content-Length: 
+      - "2776"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "[{\"task_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/f2020f97-af2a-429b-a251-4ba320c4e59b/\", \"task_id\": \"28835015-cc07-4e23-9d5b-24a614435d1f\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:unbind\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:unbind\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"call_request_id\": \"28835015-cc07-4e23-9d5b-24a614435d1f\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}, {\"task_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/f2020f97-af2a-429b-a251-4ba320c4e59b/\", \"task_id\": \"d17f3264-978c-4b44-be64-3630fcdcadfb\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:agent_unbind\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:agent_unbind\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"call_request_id\": \"d17f3264-978c-4b44-be64-3630fcdcadfb\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}, {\"task_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/f2020f97-af2a-429b-a251-4ba320c4e59b/\", \"task_id\": \"1a80caf6-5f08-4784-b6f1-937a94405189\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:delete_binding\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer_support\", \"pulp:repository:integration_test_id\", \"pulp:repository_distributor:a5b42fa21cad8b811d92\", \"pulp:action:delete_binding\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"f2020f97-af2a-429b-a251-4ba320c4e59b\", \"call_request_id\": \"1a80caf6-5f08-4784-b6f1-937a94405189\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:33:39 GMT
+- request: 
+    method: post
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/update//
+    body: 
+      encoding: US-ASCII
+      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "62"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 202
+      message: Accepted
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:34:51 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Encoding: 
+      - utf-8
+      Content-Length: 
+      - "652"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/0f8264e1-aac7-439e-88f6-61d46ce51998/\", \"task_id\": \"0f8264e1-aac7-439e-88f6-61d46ce51998\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_update\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_update\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"0f8264e1-aac7-439e-88f6-61d46ce51998\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:34:51 GMT
+- request: 
+    method: post
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/install//
+    body: 
+      encoding: US-ASCII
+      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "62"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 202
+      message: Accepted
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:00 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Encoding: 
+      - utf-8
+      Content-Length: 
+      - "654"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/77900d12-cce8-447e-8bf1-6c071e4e85c6/\", \"task_id\": \"77900d12-cce8-447e-8bf1-6c071e4e85c6\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_install\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_install\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"77900d12-cce8-447e-8bf1-6c071e4e85c6\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:00 GMT
+- request: 
+    method: post
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/actions/content/uninstall//
+    body: 
+      encoding: US-ASCII
+      string: "{\"units\":{\"units\":[{\"unit_key\":{\"name\":\"zsh\"}}]},\"options\":{}}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "62"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 202
+      message: Accepted
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:08 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Encoding: 
+      - utf-8
+      Content-Length: 
+      - "658"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/2fba6ab1-1dfd-48fd-b73c-e66a3bb5bdf6/\", \"task_id\": \"2fba6ab1-1dfd-48fd-b73c-e66a3bb5bdf6\", \"call_request_tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_uninstall\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:consumer:integration_test_consumer\", \"pulp:action:unit_uninstall\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"2fba6ab1-1dfd-48fd-b73c-e66a3bb5bdf6\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:08 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings//
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:16 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "2524"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "[{\"notify_agent\": true, \"repo_id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_consumer_support/integration_test_id/a5b42fa21cad8b811d92/\", \"type_id\": \"yum_distributor\", \"consumer_actions\": [{\"action\": \"bind\", \"status\": \"failed\", \"id\": \"6d4bf02e-5999-47e8-9902-593cc9c74827\", \"timestamp\": 1373330075.834457}], \"_ns\": \"consumer_bindings\", \"distributor_id\": \"a5b42fa21cad8b811d92\", \"consumer_id\": \"integration_test_consumer_support\", \"deleted\": false, \"binding_config\": null, \"details\": {\"server_name\": \"f18\", \"ca_cert\": \"-----BEGIN CERTIFICATE-----\\nMIIEqzCCA5OgAwIBAgIJAL95asXGxnjnMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODAeFw0xMzA3MDMxMjU5NDFaFw0zODAxMTgxMjU5NDFaMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALupWyWE7L6R\\nFp2ol6vRRBHUl7XQQtjFJ3MAcBs3RaFyB9c6fg0DhAy0kAo9gO05u9dvSAtJUOJL\\nlL7Csd3jvGGnopUWZX0ZpqJap6AER7nbY7qBVs2MUPuriq4OkMZohazz0+E4PeHQ\\nn61fpajm4L+HMIrGsBf0krckT5G9TQf2lCZP3uyqyIYX0qy6r7ZCc51Za5RA59eU\\nMLpUloZEzTzJPdTeTtPDRyJvEIuLzB/SGowaxlS6caql96k83ksMbLRSvfp2LAER\\nlkpWBQQErWoR9Y8pBaeYt8FqF7jW4tjxQ5YGlhQtF1OKslbVr6ekhZX50V5LTVZr\\nz11I7bKuLG8CAwEAAaOCAUowggFGMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgGm\\nMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjARBglghkgBhvhCAQEEBAMC\\nAkQwNQYJYIZIAYb4QgENBCgWJkthdGVsbG8gU1NMIFRvb2wgR2VuZXJhdGVkIENl\\ncnRpZmljYXRlMB0GA1UdDgQWBBTskg6r8jbjIOJ2W2zRdrboL4r68jCBoAYDVR0j\\nBIGYMIGVgBTskg6r8jbjIOJ2W2zRdrboL4r68qFypHAwbjELMAkGA1UEBhMCVVMx\\nFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYDVQQHEwdSYWxlaWdoMRAwDgYD\\nVQQKEwdTb21lT3JnMRQwEgYDVQQLEwtTb21lT3JnVW5pdDEMMAoGA1UEAxMDZjE4\\nggkAv3lqxcbGeOcwDQYJKoZIhvcNAQEFBQADggEBAJ7Hj4GxBFGDjbY5OaGW3ixJ\\nyEw/WQrDkORp2rkWmHafjTF/K5BHbDfFkWEcBHGxqdKaGjwfrf8qXAmpnrDAhmDb\\nrjM/0Ig/mAcq8H5uKOjOQIUoDeDKzgf2IkOExKEC/GofLVUD+Bt6SFW7MSsukSve\\nkGd+IcehAPu3IKDt5z5BhnpzMwc4mivOtkkcxofd23EqpbDjBPGq3MGtB6gR40vM\\neF6yN7wzA4xSJqSkE5h5ox5AqAKemnaB7J6EPzLXASW99rmZJjCV5YrQ3nw5mhCa\\naOfS8fLidf931l5eE34KNoVyJ/pdBaOl09a9gVYMzxdN/OIfj1x7uVELRPUq0ZQ=\\n-----END CERTIFICATE-----\\n\", \"relative_path\": \"/pulp/repos//path\", \"gpg_keys\": [], \"client_cert\": null, \"protocols\": [\"http\", \"https\"], \"repo_name\": \"integration_test_id\"}, \"_id\": {\"$oid\": \"51db5a9bd60ea36250a044b6\"}, \"id\": \"51db5a9bd60ea36250a044b6\"}]"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:16 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/?details=true
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:17 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "1026"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {\"package_group\": 2, \"distribution\": 1, \"package_category\": 1, \"rpm\": 8, \"erratum\": 2}, \"_id\": {\"$oid\": \"51db5a8fd60ea36250a04486\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\", \"importers\": [{\"repo_id\": \"integration_test_id\", \"_ns\": \"repo_importers\", \"importer_type_id\": \"yum_importer\", \"last_sync\": \"2013-07-08T20:34:24-04:00\", \"scheduled_syncs\": [], \"_id\": {\"$oid\": \"51db5a8fd60ea36250a04487\"}, \"config\": {\"feed\": \"file:///home/dadavis/Projects/runcible/test/fixtures/repositories/zoo5\"}, \"id\": \"yum_importer\"}], \"distributors\": [{\"repo_id\": \"integration_test_id\", \"_ns\": \"repo_distributors\", \"last_publish\": null, \"auto_publish\": false, \"scheduled_publishes\": [], \"distributor_type_id\": \"yum_distributor\", \"_id\": {\"$oid\": \"51db5a8fd60ea36250a04488\"}, \"config\": {\"http\": true, \"relative_url\": \"/path\", \"https\": true}, \"id\": \"a5b42fa21cad8b811d92\"}]}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:17 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/a5b42fa21cad8b811d92/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:17 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "2563"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"notify_agent\": true, \"repo_id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer_support/bindings/integration_test_id/a5b42fa21cad8b811d92/integration_test_consumer_support/integration_test_id/a5b42fa21cad8b811d92/\", \"type_id\": \"yum_distributor\", \"consumer_actions\": [{\"action\": \"bind\", \"status\": \"failed\", \"id\": \"6d4bf02e-5999-47e8-9902-593cc9c74827\", \"timestamp\": 1373330075.834457}], \"_ns\": \"consumer_bindings\", \"distributor_id\": \"a5b42fa21cad8b811d92\", \"consumer_id\": \"integration_test_consumer_support\", \"deleted\": false, \"binding_config\": null, \"details\": {\"server_name\": \"f18\", \"ca_cert\": \"-----BEGIN CERTIFICATE-----\\nMIIEqzCCA5OgAwIBAgIJAL95asXGxnjnMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODAeFw0xMzA3MDMxMjU5NDFaFw0zODAxMTgxMjU5NDFaMG4xCzAJBgNV\\nBAYTAlVTMRcwFQYDVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWln\\naDEQMA4GA1UEChMHU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNV\\nBAMTA2YxODCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALupWyWE7L6R\\nFp2ol6vRRBHUl7XQQtjFJ3MAcBs3RaFyB9c6fg0DhAy0kAo9gO05u9dvSAtJUOJL\\nlL7Csd3jvGGnopUWZX0ZpqJap6AER7nbY7qBVs2MUPuriq4OkMZohazz0+E4PeHQ\\nn61fpajm4L+HMIrGsBf0krckT5G9TQf2lCZP3uyqyIYX0qy6r7ZCc51Za5RA59eU\\nMLpUloZEzTzJPdTeTtPDRyJvEIuLzB/SGowaxlS6caql96k83ksMbLRSvfp2LAER\\nlkpWBQQErWoR9Y8pBaeYt8FqF7jW4tjxQ5YGlhQtF1OKslbVr6ekhZX50V5LTVZr\\nz11I7bKuLG8CAwEAAaOCAUowggFGMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgGm\\nMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjARBglghkgBhvhCAQEEBAMC\\nAkQwNQYJYIZIAYb4QgENBCgWJkthdGVsbG8gU1NMIFRvb2wgR2VuZXJhdGVkIENl\\ncnRpZmljYXRlMB0GA1UdDgQWBBTskg6r8jbjIOJ2W2zRdrboL4r68jCBoAYDVR0j\\nBIGYMIGVgBTskg6r8jbjIOJ2W2zRdrboL4r68qFypHAwbjELMAkGA1UEBhMCVVMx\\nFzAVBgNVBAgTDk5vcnRoIENhcm9saW5hMRAwDgYDVQQHEwdSYWxlaWdoMRAwDgYD\\nVQQKEwdTb21lT3JnMRQwEgYDVQQLEwtTb21lT3JnVW5pdDEMMAoGA1UEAxMDZjE4\\nggkAv3lqxcbGeOcwDQYJKoZIhvcNAQEFBQADggEBAJ7Hj4GxBFGDjbY5OaGW3ixJ\\nyEw/WQrDkORp2rkWmHafjTF/K5BHbDfFkWEcBHGxqdKaGjwfrf8qXAmpnrDAhmDb\\nrjM/0Ig/mAcq8H5uKOjOQIUoDeDKzgf2IkOExKEC/GofLVUD+Bt6SFW7MSsukSve\\nkGd+IcehAPu3IKDt5z5BhnpzMwc4mivOtkkcxofd23EqpbDjBPGq3MGtB6gR40vM\\neF6yN7wzA4xSJqSkE5h5ox5AqAKemnaB7J6EPzLXASW99rmZJjCV5YrQ3nw5mhCa\\naOfS8fLidf931l5eE34KNoVyJ/pdBaOl09a9gVYMzxdN/OIfj1x7uVELRPUq0ZQ=\\n-----END CERTIFICATE-----\\n\", \"relative_path\": \"/pulp/repos//path\", \"gpg_keys\": [], \"client_cert\": null, \"protocols\": [\"http\", \"https\"], \"repo_name\": \"integration_test_id\"}, \"_id\": {\"$oid\": \"51db5a9bd60ea36250a044b6\"}, \"id\": \"51db5a9bd60ea36250a044b6\"}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:17 GMT
+- request: 
+    method: post
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/actions/content/applicability//
+    body: 
+      encoding: US-ASCII
+      string: "{\"consumer_criteria\":{\"filters\":{\"id\":{\"$in\":[\"integration_test_consumer_support\"]}}},\"repo_criteria\":{\"filters\":{\"id\":{\"$in\":[\"integration_test_id\"]}}},\"units\":{\"erratum\":[]}}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "176"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:17 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "969"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"rpm\": {\"integration_test_consumer_support\": [{\"details\": {}, \"summary\": {\"unit_key\": {\"name\": \"elephant\", \"checksum\": \"3e1c70cd1b421328acaf6397cb3d16145306bb95f65d1b095fc31372a0a701f3\", \"epoch\": \"0\", \"version\": \"0.3\", \"release\": \"0.8\", \"arch\": \"noarch\", \"checksumtype\": \"sha256\"}}}]}, \"erratum\": {\"integration_test_consumer_support\": [{\"details\": {\"status\": \"stable\", \"issued\": \"2010-01-01 01:01:01\", \"from\": \"lzap+pub@redhat.com\", \"description\": \"One package errata\", \"title\": \"One package errata\", \"_ns\": \"units_erratum\", \"pkglist\": [{\"packages\": [{\"src\": \"http://www.fedoraproject.org\", \"name\": \"elephant\", \"sum\": null, \"filename\": \"elephant-0.3-0.8.noarch.rpm\", \"epoch\": null, \"version\": \"0.3\", \"release\": \"0.8\", \"arch\": \"noarch\"}], \"name\": \"1\", \"short\": \"\"}], \"version\": \"1\", \"references\": [], \"_content_type_id\": \"erratum\", \"_id\": \"f8277a0b-5ebd-4848-addb-1a9c9f11b2a5\", \"type\": \"security\", \"id\": \"RHEA-2010:0002\"}, \"summary\": {\"unit_key\": \"RHEA-2010:0002\"}}]}}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:17 GMT
+- request: 
+    method: put
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/
+    body: 
+      encoding: US-ASCII
+      string: "{\"delta\":{\"description\":\"Test description\"}}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "44"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:36 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "1240"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"display_name\": \"integration_test_consumer\", \"description\": \"Test description\", \"certificate\": \"-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgDbMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDkwMDM1MzZaFw0yMzA3MDcwMDM1MzZaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ7M\\nz8N/Oa41uJL7NYC1+u2FvLCEXdytuJxUde4e9Yx03l5ADZIvd5m4NDRoaur3ok73\\nZbSmlcAWTqxejOG4d27tmCNh1ep/utfA+3kH3Y22cZQoUEMaoBB7hKIJQ/eyVhP1\\nFe1ZvoDPmlxgnDFFj17SctqoKITk8v42Tn/15hJtAgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBACQtszdua4wrTwdFjvURgFZDFCg5rLU7Nlx9J5GsYsto8InY5fk49wdT\\n27WUSHY5ZnKm5hsgP1wmr5La9FLJOIBx7WygYQ8CfGpb+JGNiDXJLx30wpcbFEiy\\njuX/nBe9Ujv2UKJCLVpitxuvh39LIZnBSRvc8S43UAKB3yzoWjDXnLABKdfFG80q\\n5qlWVfpA6y+ZQ/oygA+g9KVI6ZuftQ21rcCkVdlNT/DBTDtD6NcTMt0dL0acOv6A\\nEh6GkhgjgV0TGZgn2MHSEkI3qsEiTfU129MSl2v2XWcnAg7zAAOUxlT3n1Ts8QAS\\nD4XGmExczjyWp0gEVAR9LbFa0Rkng7o=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51db5ad8d60ea36250a04536\"}, \"id\": \"integration_test_consumer\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:36 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:37 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "1226"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"display_name\": \"integration_test_consumer\", \"description\": null, \"certificate\": \"-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgDcMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDkwMDM1MzdaFw0yMzA3MDcwMDM1MzdaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMnr\\njPJQycKT0evNSKUzx/SiA0GQ+pgYiVyfkJnTgRdg7fs7juaeO4qVPHVSja8+HAru\\nYtxccUNmZBpVs1Jes6NIauB61+s8Tk4tl4Uv4vdxKfPF3bQ6w2UWxeQWmPijcME/\\nlY3ntsoL+Ylra2TiNey7aL9wi6NPFsyOYoGBrS0tAgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBAHvepdyFy8Gma5eQ0JzXpz6+30BiEqVP6Q0zthaNPc8Q1PWxt8TfEVTJ\\n8RhhDn+ueUiKPt26VmS+AGdgMfCrK8PMRog7/LeLaG2XuqOeFcDvjj+S2zjUs2em\\nAkvXzo70/LoGF4e6tO1AAWH0qZqE9wWblJUf2/eYYYL+1HntIFx8uO0jN3u5QdhC\\nVtzKs5YUu1Uzap7sIt/Cxh24nIgA4frgsUyLVtpniz5hTIUIvpFV0IPnM0AmVVwB\\nYu1I+liQwINsPsczDxgQtaZultkmATtHByi43fjeIQm8CgS7w7Q3EQmBg/Zbbg2t\\nNHc6YbruqVWr+rkAAdzisyTXtA02ymA=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51db5ad9d60ea36250a04553\"}, \"id\": \"integration_test_consumer\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:37 GMT
+- request: 
     method: post
     uri: https://admin:admin@f18/pulp/api/v2/consumers/
     body: 
@@ -647,7 +645,7 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:40:57 GMT
+      - Tue, 09 Jul 2013 00:35:38 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Location: 
@@ -658,9 +656,79 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"display_name\": \"integration_test_consumer\", \"description\": null, \"certificate\": \"-----BEGIN RSA PRIVATE KEY-----\\nMIICXQIBAAKBgQDS4VUGJVPknTdC4ZthF2nJawz+1nb/cXYsYh+J873zSebTuWq7\\nJgsPHcI8PQPu1QT2efTBI7JaKPqBk0QdiZx52y+IHuOsvTgeIz12hzQ2l+p/IXtd\\n71QDVQfShumnhdiFhIud7SMde4ibDwRdhOa60qgMy2z49pqWhMqGVTmB8wIDAQAB\\nAoGBAJ4rrR5C+T3MPhrIJUcZzJrq1ICAVBkc/Uok/wr160+D6sJ7nHZq/niEFaAh\\nE8YbuPE2YEJNiATgH6T41GpjQR04kO/VRIarEKq//llK2uqTwxXDqH6ewE6dTiW4\\nLZb87fTsG0RTUpGT91vxUFtoaYO30p/Hk+mvqiwv52A+8IahAkEA7NKblPNZZ8L5\\nc0vVIaOFpBLfzEq6SEp+8TKLAbEOmBSOlCpOW8vZNp8YvlinKps9tblEO8VWo9pt\\n7zdASCJ4bQJBAOP07ixMdtVDXfiJUdrzTP0FNwO0qIfw7b99BVN/4zjbzqPNUhMr\\nXqZQ5Z20X+BndwXxeQkK2TzWIv2XBcYCJ98CQEyYzeN+VgN+h4ooE9ZeemIYDLSZ\\n0uiA19ARhe5VIyBDPd5kVJXSN/43tRwTtnXMYkg9lPk0GZLDml0N5MewBn0CQQDY\\ngZf44QL4mMxWsu3Yu76CjgJrdZmfy7ezaKW3Yb7JERPZRbhPVqDF7A251Eg/lWVZ\\ncrhXW0Nq4aNIIbktEH0XAkB7Ublv0xs8ZT1utxZR3lwgYp63CPVto3CTtxAyKz1T\\ncHQq2oM6ragj+3Dp02p3Dylhr+NgVpPGnq3EBbYfUJTA\\n-----END RSA PRIVATE KEY-----\\n-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgCxMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDgxOTQwNTdaFw0yMzA3MDYxOTQwNTdaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANLh\\nVQYlU+SdN0Lhm2EXaclrDP7Wdv9xdixiH4nzvfNJ5tO5arsmCw8dwjw9A+7VBPZ5\\n9MEjsloo+oGTRB2JnHnbL4ge46y9OB4jPXaHNDaX6n8he13vVANVB9KG6aeF2IWE\\ni53tIx17iJsPBF2E5rrSqAzLbPj2mpaEyoZVOYHzAgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBAJicydWtp57Nsr328Pom/7UI5305+ckl7wsRZ4LWc/A/S3SRU96cz3iH\\nibTg8D2c9+ZKpW2mwumQ9IjD7c7zofMUXc4ewSA/ocb6sfKtgJ9i1xEZeDCUr/uN\\n61xXZbpIrDqHO1/duy0Rdb7BQKWoZtVl2exYNccaYxudJGW74jMRyk/+JBaGmICT\\n+AQixv5IZdsXKuDvpW8NwayccPCUHZJocyoGQsqlwyIYEzUWuFxs5hAv66Le/4sM\\nCtjqKLogVwUQi6dijPsGbCbs4wOGnG0JeKKCFC6uaUm/svq+ZbqwggnTqDI5GXM/\\nlTjsN0cEY2kNEc/HdkQ4ylOYacfDDWg=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51db15cad60ea33db7f8f979\"}, \"id\": \"integration_test_consumer\", \"_href\": {\"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}}"
+      string: "{\"display_name\": \"integration_test_consumer\", \"description\": null, \"certificate\": \"-----BEGIN RSA PRIVATE KEY-----\\nMIICXQIBAAKBgQCxlU1cs/HNaAr+stRKXAxSp0mBmkufDEEyKrju5XIzWZ03+5Ss\\nuY2fN9FCROAYYEbvNhfkPmP18HUY0iL6hOXjTA+LVl0SbtyA/2NUGsDVACM/VII9\\nuKGGQRO1TipNryubt0OclcB0nc5Ubvw0ulkQOC8pJCPBRKJ5SskdAz/TrwIDAQAB\\nAoGAfo1XxGi4ORmcPEZU42kVnxF4YNQEcCPbklS/1f/NkqqaT/sJyM2zD3RHvGI5\\nESYLZw21mQKdWfcye63FH6L18AUyRSjVAFwdVoHxToav8g4It5EWDJvs/kkthGTc\\nw0WgJQZu4X156WPagRCxvAxNe6snXngcGx+kA7tp9F9IxYECQQDhoevrbbWSsq4P\\nTjc88zApgjuLfqr7KTkQ01fMpWGrZzE2KuQD6fgEtHz4g/zOTMrIm991SfXtkE4l\\ni7AG0+AVAkEAyXvcfBGaggTjKp/EEaSjtZggUnR1FhVRiisRMVqa9zUNxJrp9yhz\\nI3jiA2PjvVavmECIZGwP8iGsVSM0R8XRswJBAMpRU+c156NT/smQm+1WLrB5q4To\\nns45Z4cTyt2gydRU4oasrOppiFBHuutoBm7B4u9A/X0BRbiwNbJq7/sfTwUCQQCB\\ngQd7B6WUJKgO4ZoY7QX81scPuKL5isJaWMw4ONCaTJOI5zmzD2DSUASVwULElE9R\\nQUlporutGk+2eWZFK7VZAkBA7M0ZbhaM9QnESCplaBk4IFLZnkhPIo/mlc9eXLwg\\nBwDKqXVvUyuowE0P79QW3W4GAHs72mn0pHQEHvNvBrYW\\n-----END RSA PRIVATE KEY-----\\n-----BEGIN CERTIFICATE-----\\nMIICgzCCAWsCAgDeMA0GCSqGSIb3DQEBBQUAMG4xCzAJBgNVBAYTAlVTMRcwFQYD\\nVQQIEw5Ob3J0aCBDYXJvbGluYTEQMA4GA1UEBxMHUmFsZWlnaDEQMA4GA1UEChMH\\nU29tZU9yZzEUMBIGA1UECxMLU29tZU9yZ1VuaXQxDDAKBgNVBAMTA2YxODAeFw0x\\nMzA3MDkwMDM1MzlaFw0yMzA3MDcwMDM1MzlaMCQxIjAgBgNVBAMUGWludGVncmF0\\naW9uX3Rlc3RfY29uc3VtZXIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALGV\\nTVyz8c1oCv6y1EpcDFKnSYGaS58MQTIquO7lcjNZnTf7lKy5jZ830UJE4BhgRu82\\nF+Q+Y/XwdRjSIvqE5eNMD4tWXRJu3ID/Y1QawNUAIz9Ugj24oYZBE7VOKk2vK5u3\\nQ5yVwHSdzlRu/DS6WRA4LykkI8FEonlKyR0DP9OvAgMBAAEwDQYJKoZIhvcNAQEF\\nBQADggEBAC8AggR+/54Ml6h7AiYTy4tVRh1LkE1/7p70f3kYnvYwc8nun3SWIxtP\\nXD48T82aGKHWAzIgvq0OOR6uhS9Lujuy58aBvRMm5S8KGacq7872XgqSTMmMUUPA\\n0s+b24qLcX5SPFA/2uBDjhwcABL7IanrSNfqDX/SOxNlA28Izbfi3HnMnec4znjm\\nNdijVtVvxd6orHEjxMUC/GAVUxl/PB/EMb7qDQ7MdDKm/LjDx9CDxS15ZcmvrSAf\\njJbkpuZq/jjZ70zuOJIK0HqHxA8CcTYeXGVHdnvgI/dxWbyKx5PsQSpIfGpegdm5\\nOw28jF6g0BCoejrv11IbJ4sA10R4dD0=\\n-----END CERTIFICATE-----\", \"_ns\": \"consumers\", \"notes\": {}, \"capabilities\": {}, \"_id\": {\"$oid\": \"51db5adbd60ea36250a04587\"}, \"id\": \"integration_test_consumer\", \"_href\": {\"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/\"}}"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:40:58 GMT
+  recorded_at: Tue, 09 Jul 2013 00:35:39 GMT
+- request: 
+    method: post
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/profiles//
+    body: 
+      encoding: US-ASCII
+      string: "{\"content_type\":\"rpm\",\"profile\":[{\"vendor\":\"FedoraHosted\",\"name\":\"elephant\",\"version\":\"0.3\",\"release\":\"0.8\",\"arch\":\"noarch\"}]}"
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "126"
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 201
+      message: Created
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:39 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Location: 
+      - /pulp/api/v2/consumers/integration_test_consumer/profiles/integration_test_consumer/rpm/
+      Content-Length: 
+      - "395"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"profile\": [{\"release\": \"0.8\", \"vendor\": \"FedoraHosted\", \"version\": \"0.3\", \"arch\": \"noarch\", \"name\": \"elephant\"}], \"_ns\": \"consumer_unit_profiles\", \"consumer_id\": \"integration_test_consumer\", \"content_type\": \"rpm\", \"_id\": {\"$oid\": \"51db5adad60ea36250a04574\"}, \"id\": \"51db5adad60ea36250a04574\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/profiles/integration_test_consumer/rpm/\"}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:39 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/profiles/rpm//
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:35:39 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "399"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"profile\": [{\"release\": \"0.8\", \"arch\": \"noarch\", \"version\": \"0.3\", \"vendor\": \"FedoraHosted\", \"name\": \"elephant\"}], \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer/profiles/rpm/integration_test_consumer/rpm/\", \"content_type\": \"rpm\", \"_ns\": \"consumer_unit_profiles\", \"_id\": {\"$oid\": \"51db5adad60ea36250a04574\"}, \"id\": \"51db5adad60ea36250a04574\", \"consumer_id\": \"integration_test_consumer\"}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:35:39 GMT
 - request: 
     method: delete
     uri: https://admin:admin@f18/pulp/api/v2/consumers/integration_test_consumer/
@@ -682,7 +750,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:40:58 GMT
+      - Tue, 09 Jul 2013 00:35:39 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
@@ -693,5 +761,5 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:40:58 GMT
+  recorded_at: Tue, 09 Jul 2013 00:35:39 GMT
 recorded_with: VCR 2.5.0

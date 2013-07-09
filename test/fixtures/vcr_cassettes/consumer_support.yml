@@ -17,22 +17,20 @@ http_interactions:
       - Ruby
   response: 
     status: 
-      code: 409
-      message: Conflict
+      code: 200
+      message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:50:23 GMT
+      - Tue, 09 Jul 2013 00:41:06 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Encoding: 
-      - utf-8
       Content-Length: 
-      - "443"
+      - "4"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"http_request_method\": \"DELETE\", \"exception\": null, \"error_message\": \"Conflicting operation reasons: [{'operation': u'delete', u'resource_type': u'consumer', u'resource_id': u'integration_test_consumer_support'}]\", \"_href\": \"/pulp/api/v2/consumers/integration_test_consumer_support/\", \"http_status\": 409, \"reasons\": [{\"operation\": \"delete\", \"resource_type\": \"consumer\", \"resource_id\": \"integration_test_consumer_support\"}], \"traceback\": null}"
+      string: "null"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:50:23 GMT
+  recorded_at: Tue, 09 Jul 2013 00:41:06 GMT
 recorded_with: VCR 2.5.0

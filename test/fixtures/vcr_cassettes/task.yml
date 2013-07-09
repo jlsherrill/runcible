@@ -87,7 +87,7 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Mon, 08 Jul 2013 19:21:43 GMT
+      - Tue, 09 Jul 2013 00:56:03 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Length: 
@@ -96,7 +96,40 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"task_id\": \"8fa4e7fd-6f3f-403e-8634-ae92de6aea61\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:create\"], \"reasons\": [], \"start_time\": \"2013-07-08T19:21:32Z\", \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:create\"], \"state\": \"finished\", \"finish_time\": \"2013-07-08T19:21:32Z\", \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"8fa4e7fd-6f3f-403e-8634-ae92de6aea61\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": {\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {}, \"_id\": {\"$oid\": \"51db113cd60ea33db7f8f25d\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\"}}, {\"task_group_id\": \"725e2884-846f-4e2d-bf2f-933528436ddd\", \"exception\": null, \"traceback\": null, \"task_id\": \"1bec1bf3-6599-4639-b194-fe307aaebae3\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": \"2013-07-08T19:21:32Z\", \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"finished\", \"finish_time\": \"2013-07-08T19:21:33Z\", \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {\"yum_importer\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}}, \"call_request_group_id\": \"725e2884-846f-4e2d-bf2f-933528436ddd\", \"call_request_id\": \"1bec1bf3-6599-4639-b194-fe307aaebae3\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": {\"importer_id\": \"yum_importer\", \"exception\": null, \"repo_id\": \"integration_test_id\", \"traceback\": null, \"started\": \"2013-07-08T15:21:32-04:00\", \"_ns\": \"repo_sync_results\", \"completed\": \"2013-07-08T15:21:33-04:00\", \"importer_type_id\": \"yum_importer\", \"error_message\": null, \"summary\": {\"content\": {\"state\": \"FINISHED\"}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"state\": \"FINISHED\"}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"added_count\": 0, \"result\": \"success\", \"updated_count\": 14, \"details\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"id\": \"51db113dd60ea33db7f8f27a\", \"removed_count\": 0}}]"
+      string: "[{\"task_group_id\": null, \"exception\": null, \"traceback\": null, \"task_id\": \"1e6a61c3-b0e6-4997-bdb6-c464a887b746\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:create\"], \"reasons\": [], \"start_time\": \"2013-07-09T00:55:50Z\", \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:create\"], \"state\": \"finished\", \"finish_time\": \"2013-07-09T00:55:50Z\", \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": null, \"call_request_id\": \"1e6a61c3-b0e6-4997-bdb6-c464a887b746\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": {\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {}, \"_id\": {\"$oid\": \"51db5f96d60ea36250a04f5d\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\"}}, {\"task_group_id\": \"da92db16-e09d-45e9-ab63-d91ae74f5990\", \"exception\": null, \"traceback\": null, \"task_id\": \"7e549aa8-2d2a-461a-ac91-109112514a38\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": \"2013-07-09T00:55:51Z\", \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"finished\", \"finish_time\": \"2013-07-09T00:55:51Z\", \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {\"yum_importer\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}}, \"call_request_group_id\": \"da92db16-e09d-45e9-ab63-d91ae74f5990\", \"call_request_id\": \"7e549aa8-2d2a-461a-ac91-109112514a38\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": {\"importer_id\": \"yum_importer\", \"exception\": null, \"repo_id\": \"integration_test_id\", \"traceback\": null, \"started\": \"2013-07-08T20:55:51-04:00\", \"_ns\": \"repo_sync_results\", \"completed\": \"2013-07-08T20:55:51-04:00\", \"importer_type_id\": \"yum_importer\", \"error_message\": null, \"summary\": {\"content\": {\"state\": \"FINISHED\"}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"state\": \"FINISHED\"}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"added_count\": 0, \"result\": \"success\", \"updated_count\": 14, \"details\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"id\": \"51db5f97d60ea36250a04f7a\", \"removed_count\": 0}}]"
     http_version: 
-  recorded_at: Mon, 08 Jul 2013 19:21:43 GMT
+  recorded_at: Tue, 09 Jul 2013 00:56:03 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@f18/pulp/api/v2/tasks/7e549aa8-2d2a-461a-ac91-109112514a38/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Tue, 09 Jul 2013 00:56:04 GMT
+      Server: 
+      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      Content-Length: 
+      - "2130"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"task_group_id\": \"da92db16-e09d-45e9-ab63-d91ae74f5990\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/tasks/7e549aa8-2d2a-461a-ac91-109112514a38/\", \"task_id\": \"7e549aa8-2d2a-461a-ac91-109112514a38\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": \"2013-07-09T00:55:51Z\", \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"finished\", \"finish_time\": \"2013-07-09T00:55:51Z\", \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {\"yum_importer\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}}, \"call_request_group_id\": \"da92db16-e09d-45e9-ab63-d91ae74f5990\", \"call_request_id\": \"7e549aa8-2d2a-461a-ac91-109112514a38\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": {\"importer_id\": \"yum_importer\", \"exception\": null, \"repo_id\": \"integration_test_id\", \"traceback\": null, \"started\": \"2013-07-08T20:55:51-04:00\", \"_ns\": \"repo_sync_results\", \"completed\": \"2013-07-08T20:55:51-04:00\", \"importer_type_id\": \"yum_importer\", \"error_message\": null, \"summary\": {\"content\": {\"state\": \"FINISHED\"}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"state\": \"FINISHED\"}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"added_count\": 0, \"result\": \"success\", \"updated_count\": 14, \"details\": {\"content\": {\"size_total\": 17872, \"items_left\": 0, \"items_total\": 8, \"state\": \"FINISHED\", \"size_left\": 0, \"details\": {\"rpm_total\": 8, \"rpm_done\": 8, \"drpm_total\": 0, \"drpm_done\": 0}, \"error_details\": []}, \"comps\": {\"state\": \"FINISHED\"}, \"distribution\": {\"items_total\": 3, \"state\": \"FINISHED\", \"error_details\": [], \"items_left\": 0}, \"errata\": {\"state\": \"FINISHED\"}, \"metadata\": {\"state\": \"FINISHED\"}}, \"id\": \"51db5f97d60ea36250a04f7a\", \"removed_count\": 0}}"
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 00:56:04 GMT
 recorded_with: VCR 2.5.0
