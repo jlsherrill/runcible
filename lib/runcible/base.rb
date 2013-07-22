@@ -220,6 +220,10 @@ module Runcible
       RestClient.log.join('\n')
     end
 
+    def self.logger
+      self.config[:logging][:logger]
+    end
+
   end 
 
   class ConfigurationUndefinedError < StandardError

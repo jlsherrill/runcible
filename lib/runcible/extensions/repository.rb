@@ -112,6 +112,11 @@ module Runcible
       # @param [String]             id the ID of the repository
       # @return [Array<String>]     the array of repository RPM IDs
       def self.rpm_ids(id)
+        criteria = {:type_ids=>[Runcible::Extensions::Rpm.content_type],
+                            :fields=>{:unit=>[], :association=>['unit_id']}}
+        self.unit_search(id, criteria).collect{|i| i['unit_id']}
+      rescue RestClient::RequestTimeout
+        Runcible::Base.logger.warn("Call to rpm_ids timed out")
         # lazy evaluated iterator from zero to infinite
         pages = Enumerator.new { |y| page = 0; loop { y << page; page += 1 } }
 
