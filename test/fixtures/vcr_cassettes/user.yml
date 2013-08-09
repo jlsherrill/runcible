@@ -1,8 +1,8 @@
 --- 
 http_interactions: 
 - request: 
-    method: delete
-    uri: https://admin:admin@f18/pulp/api/v2/users/integration_test_user/
+    method: get
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/users/
     body: 
       encoding: US-ASCII
       string: ""
@@ -21,9 +21,75 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:19:46 GMT
+      - Fri, 09 Aug 2013 20:50:03 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
+      Content-Length: 
+      - "674"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "[{\"_id\": {\"$oid\": \"5202976a5ca013477c12d87c\"}, \"name\": \"admin\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"admin\", \"id\": \"5202976a5ca013477c12d87c\", \"_href\": \"/pulp/api/v2/users/admin/\"}, {\"_id\": {\"$oid\": \"520297d75ca013477c12d897\"}, \"name\": \"hidden-REyo4e-56838440\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"hidden-REyo4e-56838440\", \"id\": \"520297d75ca013477c12d897\", \"_href\": \"/pulp/api/v2/users/hidden-REyo4e-56838440/\"}, {\"_id\": {\"$oid\": \"520555fb5ca01376c21261a4\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"520555fb5ca01376c21261a4\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}]"
+    http_version: 
+  recorded_at: Fri, 09 Aug 2013 20:50:03 GMT
+- request: 
+    method: get
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/users/integration_test_user/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Fri, 09 Aug 2013 20:50:04 GMT
+      Server: 
+      - Apache/2.2.15 (Red Hat)
+      Content-Length: 
+      - "247"
+      Content-Type: 
+      - application/json
+    body: 
+      encoding: US-ASCII
+      string: "{\"_id\": {\"$oid\": \"520555fc5ca01376c21261bc\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"password\": null, \"id\": \"520555fc5ca01376c21261bc\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
+    http_version: 
+  recorded_at: Fri, 09 Aug 2013 20:50:04 GMT
+- request: 
+    method: delete
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/users/integration_test_user/
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: 
+      Accept: 
+      - application/json
+      Accept-Encoding: 
+      - gzip, deflate
+      Content-Type: 
+      - application/json
+      User-Agent: 
+      - Ruby
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Date: 
+      - Fri, 09 Aug 2013 20:50:05 GMT
+      Server: 
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
       - "4"
       Content-Type: 
@@ -32,79 +98,13 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:19:46 GMT
-- request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/users/
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Fri, 09 Aug 2013 16:19:47 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "674"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "[{\"_id\": {\"$oid\": \"5205144ad60ea35dbaf4ca11\"}, \"name\": \"admin\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"admin\", \"id\": \"5205144ad60ea35dbaf4ca11\", \"_href\": \"/pulp/api/v2/users/admin/\"}, {\"_id\": {\"$oid\": \"520514c1d60ea35dbaf4ca2c\"}, \"name\": \"hidden-EK7OYD-5cf03ad7\", \"roles\": [\"super-users\"], \"_ns\": \"users\", \"login\": \"hidden-EK7OYD-5cf03ad7\", \"id\": \"520514c1d60ea35dbaf4ca2c\", \"_href\": \"/pulp/api/v2/users/hidden-EK7OYD-5cf03ad7/\"}, {\"_id\": {\"$oid\": \"520516a3d60ea35dbaf4e061\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"520516a3d60ea35dbaf4e061\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}]"
-    http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:19:47 GMT
-- request: 
-    method: get
-    uri: https://admin:admin@f18/pulp/api/v2/users/integration_test_user/
-    body: 
-      encoding: US-ASCII
-      string: ""
-    headers: 
-      Accept: 
-      - application/json
-      Accept-Encoding: 
-      - gzip, deflate
-      Content-Type: 
-      - application/json
-      User-Agent: 
-      - Ruby
-  response: 
-    status: 
-      code: 200
-      message: OK
-    headers: 
-      Date: 
-      - Fri, 09 Aug 2013 16:19:48 GMT
-      Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
-      Content-Length: 
-      - "247"
-      Content-Type: 
-      - application/json
-    body: 
-      encoding: US-ASCII
-      string: "{\"_id\": {\"$oid\": \"520516a4d60ea35dbaf4e079\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"password\": null, \"id\": \"520516a4d60ea35dbaf4e079\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
-    http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:19:48 GMT
+  recorded_at: Fri, 09 Aug 2013 20:50:05 GMT
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/users/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/users/
     body: 
       encoding: US-ASCII
-      string: "{\"login\":\"integration_test_user\"}"
+      string: "{\"login\":\"integration_test_user\",\"name\":\"integration_test_user\",\"password\":\"integration_test_password\"}"
     headers: 
       Accept: 
       - application/json
@@ -113,7 +113,7 @@ http_interactions:
       Content-Type: 
       - application/json
       Content-Length: 
-      - "33"
+      - "103"
       User-Agent: 
       - Ruby
   response: 
@@ -122,9 +122,9 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:19:50 GMT
+      - Fri, 09 Aug 2013 20:50:06 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Location: 
       - integration_test_user
       Content-Length: 
@@ -133,7 +133,7 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"_id\": {\"$oid\": \"520516a6d60ea35dbaf4e0bf\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"520516a6d60ea35dbaf4e0bf\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
+      string: "{\"_id\": {\"$oid\": \"520555fe5ca01376c2126218\"}, \"name\": \"integration_test_user\", \"roles\": [], \"_ns\": \"users\", \"login\": \"integration_test_user\", \"id\": \"520555fe5ca01376c2126218\", \"_href\": \"/pulp/api/v2/users/integration_test_user/\"}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:19:50 GMT
+  recorded_at: Fri, 09 Aug 2013 20:50:06 GMT
 recorded_with: VCR 2.5.0

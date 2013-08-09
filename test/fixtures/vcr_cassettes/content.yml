@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/content/uploads/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/content/uploads/
     body: 
       encoding: US-ASCII
       string: "{}"
@@ -23,23 +23,23 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:00 GMT
+      - Fri, 09 Aug 2013 20:46:20 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Location: 
-      - /pulp/api/v2/content/uploads/f6796b5c-b4e8-4c15-b3f3-8479e913ee38/
+      - /pulp/api/v2/content/uploads/a50af07b-ce4f-4b86-9770-c1f6852cc63e/
       Content-Length: 
       - "132"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"upload_id\": \"f6796b5c-b4e8-4c15-b3f3-8479e913ee38\", \"_href\": \"/pulp/api/v2/content/uploads/f6796b5c-b4e8-4c15-b3f3-8479e913ee38/\"}"
+      string: "{\"upload_id\": \"a50af07b-ce4f-4b86-9770-c1f6852cc63e\", \"_href\": \"/pulp/api/v2/content/uploads/a50af07b-ce4f-4b86-9770-c1f6852cc63e/\"}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:00 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:20 GMT
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/actions/import_upload//
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/repositories/integration_test_id/actions/import_upload//
     body: 
       encoding: US-ASCII
       string: "{\"repo_id\":\"integration_test_id\",\"unit_type_id\":\"rpm\",\"upload_id\":\"uvwx\",\"unit_key\":{\"checksumtype\":\"sha256\",\"checksum\":\"5e9fb809128d23a3e25d0c5fd38dd5d37d4ebceae7c6af8f15fed93e39d3145f\",\"epoch\":\"0\",\"version\":\"8.3.3\",\"release\":\"1.elfake\",\"arch\":\"noarch\",\"name\":\"recons\"}}"
@@ -60,9 +60,9 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:18:13 GMT
+      - Fri, 09 Aug 2013 20:48:49 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
       - "4"
       Content-Type: 
@@ -71,10 +71,10 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:18:13 GMT
+  recorded_at: Fri, 09 Aug 2013 20:48:49 GMT
 - request: 
     method: get
-    uri: https://admin:admin@f18/pulp/api/v2/content/uploads/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/content/uploads/
     body: 
       encoding: US-ASCII
       string: ""
@@ -93,16 +93,16 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:18:16 GMT
+      - Fri, 09 Aug 2013 20:48:52 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
-      - "136"
+      - "296"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"upload_ids\": [\"25ab10d4-56fd-4f45-a49d-8a9e1de6a61b\", \"230cd8d3-1b9c-44f3-bbac-e03d5c41addd\", \"f6796b5c-b4e8-4c15-b3f3-8479e913ee38\"]}"
+      string: "{\"upload_ids\": [\"10fd53eb-0b96-4755-b12c-2513183a5287\", \"c37f1706-e0a7-499e-a0c6-518932a0e96b\", \"fc5ccff2-425c-43c1-a204-438a491d13d5\", \"4420e4fe-6123-4eac-adfd-7e1b4ac70684\", \"96fed4a7-2527-4042-9825-5e114d71dc26\", \"7fdad031-97a2-437a-9d06-ce00e770e0b9\", \"a50af07b-ce4f-4b86-9770-c1f6852cc63e\"]}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:18:17 GMT
+  recorded_at: Fri, 09 Aug 2013 20:48:52 GMT
 recorded_with: VCR 2.5.0

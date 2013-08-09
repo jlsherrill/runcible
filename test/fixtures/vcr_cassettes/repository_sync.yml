@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/actions/sync/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/repositories/integration_test_id/actions/sync/
     body: 
       encoding: US-ASCII
       string: "{}"
@@ -23,9 +23,9 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:19:27 GMT
+      - Fri, 09 Aug 2013 20:49:48 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Encoding: 
       - utf-8
       Content-Length: 
@@ -34,7 +34,7 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"83e2c410-50ae-4ae1-ba33-efb9faed9ad8\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/83e2c410-50ae-4ae1-ba33-efb9faed9ad8/\", \"task_id\": \"b7fd5326-8ac9-48fc-a1f1-b6e84996ad72\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"83e2c410-50ae-4ae1-ba33-efb9faed9ad8\", \"call_request_id\": \"b7fd5326-8ac9-48fc-a1f1-b6e84996ad72\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"6333196a-32a5-40a4-b3f7-780f07369af5\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/6333196a-32a5-40a4-b3f7-780f07369af5/\", \"task_id\": \"41b79a4c-5c65-4b68-8adb-fe60c5914edc\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"6333196a-32a5-40a4-b3f7-780f07369af5\", \"call_request_id\": \"41b79a4c-5c65-4b68-8adb-fe60c5914edc\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:19:27 GMT
+  recorded_at: Fri, 09 Aug 2013 20:49:48 GMT
 recorded_with: VCR 2.5.0

@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/content/uploads/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/content/uploads/
     body: 
       encoding: US-ASCII
       string: "{}"
@@ -23,23 +23,23 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:00 GMT
+      - Fri, 09 Aug 2013 20:46:20 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Location: 
-      - /pulp/api/v2/content/uploads/a2991826-0012-4aba-8ee3-32a5f93940e2/
+      - /pulp/api/v2/content/uploads/e50141ea-319f-4a20-b0c7-04edb5dae382/
       Content-Length: 
       - "132"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"upload_id\": \"a2991826-0012-4aba-8ee3-32a5f93940e2\", \"_href\": \"/pulp/api/v2/content/uploads/a2991826-0012-4aba-8ee3-32a5f93940e2/\"}"
+      string: "{\"upload_id\": \"e50141ea-319f-4a20-b0c7-04edb5dae382\", \"_href\": \"/pulp/api/v2/content/uploads/e50141ea-319f-4a20-b0c7-04edb5dae382/\"}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:00 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:21 GMT
 - request: 
     method: delete
-    uri: https://admin:admin@f18/pulp/api/v2/content/uploads/a2991826-0012-4aba-8ee3-32a5f93940e2//
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/content/uploads/e50141ea-319f-4a20-b0c7-04edb5dae382//
     body: 
       encoding: US-ASCII
       string: ""
@@ -58,9 +58,9 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:00 GMT
+      - Fri, 09 Aug 2013 20:46:21 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
       - "4"
       Content-Type: 
@@ -69,5 +69,5 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:00 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:21 GMT
 recorded_with: VCR 2.5.0

@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: https://admin:admin@f18/pulp/api/v2/events/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/events/
     body: 
       encoding: US-ASCII
       string: "{\"notifier_type_id\":\"http\",\"notifier_config\":{\"url\":\"http://foo.com/foo/\"},\"event_types\":[\"repo.publish.finish\"]}"
@@ -23,23 +23,23 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:01 GMT
+      - Fri, 09 Aug 2013 20:46:21 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Location: 
-      - /pulp/api/v2/events/52051585d60ea35dbaf4d36f/
+      - /pulp/api/v2/events/5205551d5ca01376c21254c6/
       Content-Length: 
       - "282"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"52051585d60ea35dbaf4d36f\"}, \"id\": \"52051585d60ea35dbaf4d36f\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/52051585d60ea35dbaf4d36f/\"}"
+      string: "{\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"5205551d5ca01376c21254c6\"}, \"id\": \"5205551d5ca01376c21254c6\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/5205551d5ca01376c21254c6/\"}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:01 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:21 GMT
 - request: 
     method: get
-    uri: https://admin:admin@f18/pulp/api/v2/events/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/events/
     body: 
       encoding: US-ASCII
       string: ""
@@ -58,21 +58,21 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:01 GMT
+      - Fri, 09 Aug 2013 20:46:21 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
       - "556"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"notifier_config\": {\"url\": \"http://localhost:3000/katello/api/repositories/sync_complete\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.sync.finish\"], \"_id\": {\"$oid\": \"520514c4d60ea35dbaf4ca3e\"}, \"id\": \"520514c4d60ea35dbaf4ca3e\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/\"}, {\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"52051585d60ea35dbaf4d36f\"}, \"id\": \"52051585d60ea35dbaf4d36f\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/\"}]"
+      string: "[{\"notifier_config\": {\"url\": \"http://localhost:3000/katello/api/repositories/sync_complete\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.sync.finish\"], \"_id\": {\"$oid\": \"520297d95ca013477c12d8a9\"}, \"id\": \"520297d95ca013477c12d8a9\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/\"}, {\"notifier_config\": {\"url\": \"http://foo.com/foo/\"}, \"_ns\": \"event_listeners\", \"event_types\": [\"repo.publish.finish\"], \"_id\": {\"$oid\": \"5205551d5ca01376c21254c6\"}, \"id\": \"5205551d5ca01376c21254c6\", \"notifier_type_id\": \"http\", \"_href\": \"/pulp/api/v2/events/\"}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:01 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:21 GMT
 - request: 
     method: delete
-    uri: https://admin:admin@f18/pulp/api/v2/events/52051585d60ea35dbaf4d36f/
+    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/events/5205551d5ca01376c21254c6/
     body: 
       encoding: US-ASCII
       string: ""
@@ -91,9 +91,9 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 16:15:01 GMT
+      - Fri, 09 Aug 2013 20:46:21 GMT
       Server: 
-      - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
+      - Apache/2.2.15 (Red Hat)
       Content-Length: 
       - "4"
       Content-Type: 
@@ -102,5 +102,5 @@ http_interactions:
       encoding: US-ASCII
       string: "null"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 16:15:01 GMT
+  recorded_at: Fri, 09 Aug 2013 20:46:21 GMT
 recorded_with: VCR 2.5.0
