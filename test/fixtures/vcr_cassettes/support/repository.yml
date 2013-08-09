@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: delete
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/test_repo_iso_fixture/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/test_repo_iso_fixture/
     body: 
       encoding: US-ASCII
       string: ""
@@ -21,7 +21,7 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:28:44 GMT
+      - Fri, 09 Aug 2013 16:16:09 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -32,12 +32,12 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"efa274e6-0a9e-4257-8d49-2ae068a03a98\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/efa274e6-0a9e-4257-8d49-2ae068a03a98/\", \"task_id\": \"b1bcf819-3ec6-4473-8ca1-a12e6359cded\", \"call_request_tags\": [\"pulp:repository:test_repo_iso_fixture\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:test_repo_iso_fixture\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"efa274e6-0a9e-4257-8d49-2ae068a03a98\", \"call_request_id\": \"b1bcf819-3ec6-4473-8ca1-a12e6359cded\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"3bf3b259-0e50-4298-952f-1686686e3340\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/3bf3b259-0e50-4298-952f-1686686e3340/\", \"task_id\": \"794705d4-84af-4fa8-bf8f-173323f177d5\", \"call_request_tags\": [\"pulp:repository:test_repo_iso_fixture\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:test_repo_iso_fixture\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"3bf3b259-0e50-4298-952f-1686686e3340\", \"call_request_id\": \"794705d4-84af-4fa8-bf8f-173323f177d5\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:28:44 GMT
+  recorded_at: Fri, 09 Aug 2013 16:16:09 GMT
 - request: 
     method: delete
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id_distro/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id_distro/
     body: 
       encoding: US-ASCII
       string: ""
@@ -56,7 +56,7 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:29:14 GMT
+      - Fri, 09 Aug 2013 16:16:39 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -67,12 +67,12 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"83314336-cef9-4930-b5f0-c4646de84daa\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/83314336-cef9-4930-b5f0-c4646de84daa/\", \"task_id\": \"25e82588-195f-40fd-a6a6-ac32bbb98d37\", \"call_request_tags\": [\"pulp:repository:integration_test_id_distro\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_distro\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"83314336-cef9-4930-b5f0-c4646de84daa\", \"call_request_id\": \"25e82588-195f-40fd-a6a6-ac32bbb98d37\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"9e8510c9-b858-434e-9162-cbd14592075e\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/9e8510c9-b858-434e-9162-cbd14592075e/\", \"task_id\": \"8fda099d-705a-4777-bcb8-8b68da148b14\", \"call_request_tags\": [\"pulp:repository:integration_test_id_distro\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_distro\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"9e8510c9-b858-434e-9162-cbd14592075e\", \"call_request_id\": \"8fda099d-705a-4777-bcb8-8b68da148b14\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:29:14 GMT
+  recorded_at: Fri, 09 Aug 2013 16:16:39 GMT
 - request: 
     method: delete
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id_clone/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id_clone/
     body: 
       encoding: US-ASCII
       string: ""
@@ -91,7 +91,7 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:30:48 GMT
+      - Fri, 09 Aug 2013 16:18:42 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -102,12 +102,12 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"2d5a16e1-38a5-400f-a090-1cfb84fd639c\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/2d5a16e1-38a5-400f-a090-1cfb84fd639c/\", \"task_id\": \"876d3743-1fea-4523-b0f7-00373ab9522f\", \"call_request_tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"2d5a16e1-38a5-400f-a090-1cfb84fd639c\", \"call_request_id\": \"876d3743-1fea-4523-b0f7-00373ab9522f\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"f55256fd-7057-4a13-aa0d-073ab6fd60fc\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/f55256fd-7057-4a13-aa0d-073ab6fd60fc/\", \"task_id\": \"cdcfc31b-24cc-4676-9b5d-e36335028433\", \"call_request_tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id_clone\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"f55256fd-7057-4a13-aa0d-073ab6fd60fc\", \"call_request_id\": \"cdcfc31b-24cc-4676-9b5d-e36335028433\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:30:48 GMT
+  recorded_at: Fri, 09 Aug 2013 16:18:42 GMT
 - request: 
     method: post
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
     body: 
       encoding: US-ASCII
       string: "{\"schedule\":\"2012-09-25T20:44:00Z/P7D\"}"
@@ -128,23 +128,23 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:31:31 GMT
+      - Fri, 09 Aug 2013 16:19:36 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Location: 
-      - /pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/5204fd4406c056081032e0ef/
+      - /pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/52051699d60ea35dbaf4dfe2/
       Content-Length: 
       - "406"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"next_run\": \"2013-08-13T20:44:00Z\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/5204fd4406c056081032e0ef/\", \"schedule\": \"2012-09-25T20:44:00Z/P7D\", \"override_config\": {}, \"remaining_runs\": null, \"first_run\": \"2013-08-13T20:44:00Z\", \"enabled\": true, \"last_run\": null, \"failure_threshold\": null, \"_id\": \"5204fd4406c056081032e0ef\", \"consecutive_failures\": 0}"
+      string: "{\"next_run\": \"2013-08-13T20:44:00Z\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/52051699d60ea35dbaf4dfe2/\", \"schedule\": \"2012-09-25T20:44:00Z/P7D\", \"override_config\": {}, \"remaining_runs\": null, \"first_run\": \"2013-08-13T20:44:00Z\", \"enabled\": true, \"last_run\": null, \"failure_threshold\": null, \"_id\": \"52051699d60ea35dbaf4dfe2\", \"consecutive_failures\": 0}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:31:32 GMT
+  recorded_at: Fri, 09 Aug 2013 16:19:37 GMT
 - request: 
     method: post
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id/actions/sync/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/actions/sync/
     body: 
       encoding: US-ASCII
       string: "{}"
@@ -165,7 +165,7 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:31:34 GMT
+      - Fri, 09 Aug 2013 16:19:39 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -176,12 +176,12 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"089b9d3c-611a-4021-840d-a23308755cc1\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/089b9d3c-611a-4021-840d-a23308755cc1/\", \"task_id\": \"cc6db98f-ddff-4527-9e6a-021a8f2b2434\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"089b9d3c-611a-4021-840d-a23308755cc1\", \"call_request_id\": \"cc6db98f-ddff-4527-9e6a-021a8f2b2434\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"24b0c577-c347-4503-bb66-6073e7d5dfa8\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/24b0c577-c347-4503-bb66-6073e7d5dfa8/\", \"task_id\": \"cc7885b1-5e9c-42f0-932e-942c3b9c9ef3\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:sync\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"24b0c577-c347-4503-bb66-6073e7d5dfa8\", \"call_request_id\": \"cc7885b1-5e9c-42f0-932e-942c3b9c9ef3\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:31:34 GMT
+  recorded_at: Fri, 09 Aug 2013 16:19:40 GMT
 - request: 
     method: get
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id/?
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/?
     body: 
       encoding: US-ASCII
       string: ""
@@ -200,7 +200,7 @@ http_interactions:
       message: Not Found
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:31:49 GMT
+      - Fri, 09 Aug 2013 16:19:58 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
@@ -213,10 +213,10 @@ http_interactions:
       encoding: US-ASCII
       string: "{\"http_request_method\": \"GET\", \"exception\": null, \"error_message\": \"Missing resource(s): repo=integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\", \"http_status\": 404, \"traceback\": null, \"resources\": {\"repo\": \"integration_test_id\"}}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:31:49 GMT
+  recorded_at: Fri, 09 Aug 2013 16:19:58 GMT
 - request: 
     method: post
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/
     body: 
       encoding: US-ASCII
       string: "{\"id\":\"integration_test_id\"}"
@@ -237,7 +237,7 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:31:49 GMT
+      - Fri, 09 Aug 2013 16:19:58 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Location: 
@@ -248,12 +248,12 @@ http_interactions:
       - application/json
     body: 
       encoding: US-ASCII
-      string: "{\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {}, \"_id\": {\"$oid\": \"5204fd5506c056081032e224\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\"}"
+      string: "{\"scratchpad\": {}, \"display_name\": \"integration_test_id\", \"description\": null, \"_ns\": \"repos\", \"notes\": {}, \"content_unit_counts\": {}, \"_id\": {\"$oid\": \"520516aed60ea35dbaf4e121\"}, \"id\": \"integration_test_id\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/\"}"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:31:49 GMT
+  recorded_at: Fri, 09 Aug 2013 16:19:58 GMT
 - request: 
     method: delete
-    uri: https://admin:dFsynI%2BLyZzOdf2JNwXjbUdJqWrAECko@katello.devel/pulp/api/v2/repositories/integration_test_id/
+    uri: https://admin:admin@f18/pulp/api/v2/repositories/integration_test_id/
     body: 
       encoding: US-ASCII
       string: ""
@@ -272,18 +272,18 @@ http_interactions:
       message: Accepted
     headers: 
       Date: 
-      - Fri, 09 Aug 2013 14:31:50 GMT
+      - Fri, 09 Aug 2013 16:19:58 GMT
       Server: 
       - Apache/2.4.4 (Fedora) OpenSSL/1.0.1e-fips mod_wsgi/3.4 Python/2.7.3
       Content-Encoding: 
       - utf-8
       Content-Length: 
-      - "803"
+      - "710"
       Content-Type: 
       - application/json
     body: 
       encoding: US-ASCII
-      string: "[{\"task_group_id\": \"2c0ec273-2abc-472b-9384-21268094b6e6\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/2c0ec273-2abc-472b-9384-21268094b6e6/\", \"task_id\": \"2d1a828a-5f7f-40d0-a3f4-07739f5bee65\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:delete\"], \"reasons\": [{\"operation\": \"update\", \"resource_type\": \"repository\", \"resource_id\": \"integration_test_id\"}], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"2c0ec273-2abc-472b-9384-21268094b6e6\", \"call_request_id\": \"2d1a828a-5f7f-40d0-a3f4-07739f5bee65\", \"principal_login\": \"admin\", \"response\": \"postponed\", \"result\": null}]"
+      string: "[{\"task_group_id\": \"9545ec65-3b9e-4e20-9a05-d6d4c8052d83\", \"exception\": null, \"traceback\": null, \"_href\": \"/pulp/api/v2/task_groups/9545ec65-3b9e-4e20-9a05-d6d4c8052d83/\", \"task_id\": \"e4e7fe44-116b-4d01-9a39-b0532e30c36e\", \"call_request_tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:delete\"], \"reasons\": [], \"start_time\": null, \"tags\": [\"pulp:repository:integration_test_id\", \"pulp:action:delete\"], \"state\": \"waiting\", \"finish_time\": null, \"dependency_failures\": {}, \"schedule_id\": null, \"progress\": {}, \"call_request_group_id\": \"9545ec65-3b9e-4e20-9a05-d6d4c8052d83\", \"call_request_id\": \"e4e7fe44-116b-4d01-9a39-b0532e30c36e\", \"principal_login\": \"admin\", \"response\": \"accepted\", \"result\": null}]"
     http_version: 
-  recorded_at: Fri, 09 Aug 2013 14:31:50 GMT
+  recorded_at: Fri, 09 Aug 2013 16:19:58 GMT
 recorded_with: VCR 2.5.0
