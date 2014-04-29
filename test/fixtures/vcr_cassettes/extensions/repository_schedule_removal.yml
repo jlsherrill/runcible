@@ -2,7 +2,7 @@
 http_interactions: 
 - request: 
     method: post
-    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
+    uri: https://admin:admin@centos.dev/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
     body: 
       encoding: US-ASCII
       string: "{\"schedule\":\"2012-10-25T20:44:00Z/P7D\"}"
@@ -23,23 +23,39 @@ http_interactions:
       message: Created
     headers: 
       Date: 
-      - Thu, 19 Sep 2013 18:08:44 GMT
+      - Tue, 29 Apr 2014 15:24:48 GMT
       Server: 
-      - Apache/2.2.15 (Red Hat)
+      - Apache/2.2.15 (CentOS)
       Location: 
-      - /pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/523b3dac5ca0134fd30dee9c/
+      - /pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/535fc440200c4b4375c12809/
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
       Content-Length: 
-      - "406"
+      - "365"
+      Connection: 
+      - close
       Content-Type: 
       - application/json
     body: 
-      encoding: US-ASCII
-      string: "{\"next_run\": \"2013-09-19T20:44:00Z\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/523b3dac5ca0134fd30dee9c/\", \"schedule\": \"2012-10-25T20:44:00Z/P7D\", \"override_config\": {}, \"remaining_runs\": null, \"first_run\": \"2013-09-19T20:44:00Z\", \"enabled\": true, \"last_run\": null, \"failure_threshold\": null, \"_id\": \"523b3dac5ca0134fd30dee9c\", \"consecutive_failures\": 0}"
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAAAAAAAAA3WRwW4CIRCGX8VwrguLbFz33AfowVObhiA7ukSEDQxaY3z3
+        gnGrB3vkn39mvn+4EAc/KENypJsRzmoxZ2LOV+u66bjoRPtJ3mYkwEEZZ9yu
+        GGN2umRt1q2KKNPYK4Q+q/Vi1S7bhrVtxVZC1Ms6e7YmxOcFfF6zOW/WnHVC
+        dIzdFqBHZYtJap8cZivLatQD9MnCf530Y/leuvcnFXYF60L8EUIwPdxe12su
+        3ktfxDiEXVBovJMImcn05DsbwKmNvfFjSDClKiwKH1FRxX3hGJMdqwgh76mK
+        FqsAo48GfThX8ey0PBkcpEro5Zg21sShIG6VsSmAxCFAHLztH5Oz4FPQME3v
+        zGH0ASF0L4i7czrIyVAGlxS5sVk0Wy0E44xpsRGLZaNr3rJVsWjvIuiE5gjy
+        zhHvF5YZZ1v6adlM1WjokdO/RAYifQFBJ4BIn3Ho9F+RlkPQ/5gouf4CbMxA
+        YncCAAA=
+
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 18:08:44 GMT
+  recorded_at: Tue, 29 Apr 2014 15:24:48 GMT
 - request: 
     method: get
-    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
+    uri: https://admin:admin@centos.dev/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/
     body: 
       encoding: US-ASCII
       string: ""
@@ -58,21 +74,37 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Thu, 19 Sep 2013 18:08:44 GMT
+      - Tue, 29 Apr 2014 15:24:48 GMT
       Server: 
-      - Apache/2.2.15 (Red Hat)
+      - Apache/2.2.15 (CentOS)
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
       Content-Length: 
-      - "408"
+      - "367"
+      Connection: 
+      - close
       Content-Type: 
       - application/json
     body: 
-      encoding: US-ASCII
-      string: "[{\"next_run\": \"2013-09-19T20:44:00Z\", \"_href\": \"/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/523b3dac5ca0134fd30dee9c/\", \"schedule\": \"2012-10-25T20:44:00Z/P7D\", \"override_config\": {}, \"remaining_runs\": null, \"first_run\": \"2013-09-19T20:44:00Z\", \"enabled\": true, \"last_run\": null, \"failure_threshold\": null, \"_id\": \"523b3dac5ca0134fd30dee9c\", \"consecutive_failures\": 0}]"
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAAAAAAAAA3WRQW7DIBBFr1Kxrg0mWHa87gG6yKpVhQgexygELBjSRlXu
+        Xojitot2yZ8/M+8Pr5/EwQfKkBwZHghnjaiYqPh217QDF4PoX8jjAwlwUsYZ
+        dyjGmJ0uWZt1qyLKtIwKYcxqs9n2Xd+yvq/ZVoima7JnMiH+XsCrhlW83XE2
+        CDEwdluAHpUtJql9cpitLKtRzzAmC/910ufuqXQf31U4FKxP4s8Qghnh9rpe
+        c/FeeiXGIRyCQuOdRMhMZiRv2QBO7e2NH0OCNVVhUfgTFVU8Fo4l2aWOEPKe
+        umixDrD4aNCHSx0vTst3g7NUCb1c0t6aOBfESRmbAkicA8TZ2/FnchZ8ChrW
+        6YM5LT4ghOEP4uGSTnI1lMElRW5sN+2khWCcMS32YtO1uuE92xaL9i6CTmjO
+        IO8c8X5hmXGm0k/LZqoWQ8+cficyEOkfEHQFiPQ3Dl3/K9JyCPofEyXXty8W
+        KZMleQIAAA==
+
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 18:08:44 GMT
+  recorded_at: Tue, 29 Apr 2014 15:24:48 GMT
 - request: 
     method: delete
-    uri: https://admin:admin@abed.usersys.redhat.com/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/523b3dac5ca0134fd30dee9c/
+    uri: https://admin:admin@centos.dev/pulp/api/v2/repositories/integration_test_id/importers/yum_importer/schedules/sync/535fc440200c4b4375c12809/
     body: 
       encoding: US-ASCII
       string: ""
@@ -91,16 +123,24 @@ http_interactions:
       message: OK
     headers: 
       Date: 
-      - Thu, 19 Sep 2013 18:08:44 GMT
+      - Tue, 29 Apr 2014 15:24:48 GMT
       Server: 
-      - Apache/2.2.15 (Red Hat)
+      - Apache/2.2.15 (CentOS)
+      Vary: 
+      - Accept-Encoding
+      Content-Encoding: 
+      - gzip
       Content-Length: 
-      - "4"
+      - "24"
+      Connection: 
+      - close
       Content-Type: 
       - application/json
     body: 
-      encoding: US-ASCII
-      string: "null"
+      encoding: ASCII-8BIT
+      string: !binary |
+        H4sIAAAAAAAAA8srzckBAE/8yyUEAAAA
+
     http_version: 
-  recorded_at: Thu, 19 Sep 2013 18:08:44 GMT
-recorded_with: VCR 2.5.0
+  recorded_at: Tue, 29 Apr 2014 15:24:48 GMT
+recorded_with: VCR 2.8.0

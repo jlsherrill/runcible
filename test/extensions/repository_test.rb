@@ -33,18 +33,34 @@ module TestExtensionsRepositoryBase
   def setup
     @support = RepositorySupport.new
     @extension = TestRuncible.server.extensions.repository
-    VCR.insert_cassette('extensions/repository_extensions',
-                        :match_requests_on => [:body_json, :path, :method])
   end
 
   def teardown
     VCR.eject_cassette
   end
 
+  def assert_success_response(response)
+    if response.code == 202
+      tasks = @support.wait_on_response(response)
+      tasks.each do |task|
+        assert task["state"], "finished"
+      end
+    else
+      assert response.code, 200
+    end
+  end
+
 end
 
 class TestExtensionsRepositoryCreate < MiniTest::Unit::TestCase
   include TestExtensionsRepositoryBase
+
+  def setup
+    super
+    VCR.insert_cassette('extensions/repository/create',
+                        :match_requests_on => [:body_json, :path, :method])
+    @support.destroy_repo 
+  end
 
   def teardown
     super
@@ -125,6 +141,8 @@ class TestExtensionsRepositoryMisc < MiniTest::Unit::TestCase
 
   def setup
     super
+    VCR.insert_cassette('extensions/repository/misc',
+                    :match_requests_on => [:body_json, :path, :method])
     @support.create_and_sync_repo(:importer_and_distributor => true)
   end
 
@@ -165,10 +183,12 @@ class TestExtensionsRepositoryMisc < MiniTest::Unit::TestCase
   end
 
   def test_publish_all
-    response = @extension.publish_all(RepositorySupport.repo_id)
-    @support.wait_on_tasks(response)
-
-    assert_includes response.first['call_request_tags'], 'pulp:action:publish'
+    responses = @extension.publish_all(RepositorySupport.repo_id)
+    assert responses.length == 1
+    responses.each do |response|
+      tasks = assert_success_response(response)
+      assert_includes tasks.first['tags'], 'pulp:action:publish'
+    end
   end
 
   def test_publish_status
@@ -184,9 +204,9 @@ class TestExtensionsRepositoryMisc < MiniTest::Unit::TestCase
 
   def test_generate_applicability_by_ids
     response = @extension.regenerate_applicability_by_ids([@consumer_id])
-    assert_equal 202, response.code
-    task = RepositorySupport.new.wait_on_task(response)
-    assert 'success', task['state']
+
+    tasks = assert_success_response(response)
+    assert 'finished', tasks.first['state']
   end
 
 end

@@ -93,9 +93,7 @@ class RepositorySupport
 
   def create_repo(options={})
     repo = nil
-    VCR.use_cassette('support/repository') do
-      repo = @repo_resource.retrieve(RepositorySupport.repo_id)
-    end
+    repo = @repo_resource.retrieve(RepositorySupport.repo_id)
 
     if !repo.nil?
       destroy_repo
@@ -130,20 +128,22 @@ class RepositorySupport
 
   def sync_repo(options={})
     VCR.use_cassette('support/repository') do
-      @task = @repo_resource.sync(RepositorySupport.repo_id).first
+      @task = @repo_resource.sync(RepositorySupport.repo_id)
 
       if !options[:wait]
-        self.wait_on_task(task)
+        self.wait_on_response(@task)
       end
     end
 
     return @task
-  rescue Exception => e
-    puts e
+  end
+
+  def wait_on_response(response)
+    wait_on_tasks(response["spawned_tasks"].map{|task_ref| {"task_id"=> task_ref["task_id"]}})
   end
 
   def wait_on_tasks(tasks)
-    tasks.each do |task|
+    tasks.map do |task|
       self.wait_on_task(task)
     end
   end
